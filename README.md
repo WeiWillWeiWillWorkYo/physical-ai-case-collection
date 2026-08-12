@@ -14,8 +14,9 @@ Private collection of customer-facing Physical AI simulation videos.
 | `04_genesis_drone` | Genesis drone control, RL workflow, robustness, and mission videos in Japanese and English |
 | `05_genesis_franka_arm` | Genesis Franka arm control and workflow videos in Japanese and English |
 | `06_genesis_openarm_ppo` | Genesis OpenArm PPO policy rollouts |
+| `07_isaaclab_4arm_sorting` | Isaac Lab four-arm collaborative recycling sorting: global scheduler, dynamic target assignment/reassignment, moving-belt picking with wood-chip stream |
 
-The collection contains 41 MP4 files. `SHA256SUMS` records their integrity hashes.
+The collection contains 42 MP4 files. `SHA256SUMS` records their integrity hashes.
 
 ## Notes
 
