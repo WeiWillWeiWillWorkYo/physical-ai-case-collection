@@ -18,6 +18,22 @@ Private collection of customer-facing Physical AI simulation videos.
 
 The collection contains 42 MP4 files. `SHA256SUMS` records their integrity hashes.
 
+## Showcase page
+
+`index.html` is a self-contained bilingual (EN primary / JA secondary) showcase
+page with an embedded player, title, and engagement summary for every video.
+GitHub cannot stream repository files and GitHub Pages would make the content
+public, so view it from a local clone:
+
+```bash
+git clone git@github.com:WeiWillWeiWillWorkYo/physical-ai-case-collection.git
+cd physical-ai-case-collection
+python3 -m http.server 8080   # or simply open index.html in a browser
+# → http://localhost:8080
+```
+
+Works fully offline — suitable for interviews and customer meetings.
+
 ## Notes
 
 - Videos are stored directly in Git because every individual file is below GitHub's 100 MB file limit.
