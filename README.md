@@ -1,5 +1,7 @@
 # Physical AI Case Collection / Physical AI 事例集
 
+**▶ Live showcase page / 展示ページ: https://weiwillweiwillworkyo.github.io/physical-ai-case-collection/**
+
 Private collection of customer-facing Physical AI simulation videos.
 
 日本の顧客向け説明を含む Physical AI シミュレーション事例集です。
