@@ -9,10 +9,10 @@
       skip: "Skip to content",
       siteTitle: "Physical AI Case Studies",
       intro:
-        "Robot control, reinforcement learning and DEM/SPH simulation, brought together in a collection of projects and videos.",
+        "Robot control, reinforcement learning and simulation, brought together in a collection of projects and videos.",
       disclosure:
         "No client data was used. Any client company names or other client information shown are included with permission.",
-      eyebrow: "ROBOTICS · REINFORCEMENT LEARNING · DEM · SPH",
+      eyebrow: "ROBOTICS · REINFORCEMENT LEARNING · SIMULATION",
       caseStat: "simulation cases",
       demoStat: "video demonstrations",
       cases: "Simulation Cases",
@@ -45,16 +45,16 @@
       emptyTitle: "No items added yet",
       emptyDescription: "This section is currently empty.",
       footer: "Physical AI · Case Studies",
-      meta: "Physical AI case studies in robot control, reinforcement learning and DEM/SPH simulation, with videos and descriptions in English and Japanese.",
+      meta: "Physical AI case studies in robot control, reinforcement learning and simulation, with videos and descriptions in English and Japanese.",
     },
     ja: {
       skip: "コンテンツへスキップ",
       siteTitle: "Physical AI 事例集",
       intro:
-        "ロボットの制御や強化学習、DEM・SPHによる粒子シミュレーションの事例を、映像とともにまとめています。",
+        "ロボット制御や強化学習、シミュレーションの事例を、映像とともにまとめています。",
       disclosure:
         "顧客データは使用していません。顧客企業名などの情報を掲載している場合は、すべて許可を得ています。",
-      eyebrow: "ロボット制御 · 強化学習 · DEM · SPH",
+      eyebrow: "ロボット制御 · 強化学習 · シミュレーション",
       caseStat: "シミュレーション事例",
       demoStat: "デモ映像",
       cases: "シミュレーション事例",
@@ -87,7 +87,7 @@
       emptyTitle: "まだ項目がありません",
       emptyDescription: "この欄は現在空です。",
       footer: "Physical AI · 事例集",
-      meta: "ロボット制御、強化学習、DEM・SPHによるシミュレーションをまとめたPhysical AI事例集。各事例の映像と技術を日本語・英語で紹介します。",
+      meta: "ロボット制御、強化学習、シミュレーションをまとめたPhysical AI事例集。各事例の映像と技術を日本語・英語で紹介します。",
     },
   };
   const icons = {

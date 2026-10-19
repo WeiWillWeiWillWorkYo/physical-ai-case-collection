@@ -2,10 +2,10 @@
 
 [Live showcase / 展示ページ](https://weiwillweiwillworkyo.github.io/physical-ai-case-collection/)
 
-Robot control, reinforcement learning and DEM/SPH simulation, brought together
+Robot control, reinforcement learning and simulation, brought together
 in a collection of projects and videos by WEI / 崔 煒.
 
-ロボットの制御や強化学習、DEM・SPHによる粒子シミュレーションの事例を、映像とともにまとめています。
+ロボット制御や強化学習、シミュレーションの事例を、映像とともにまとめています。
 
 The public GitHub Pages site is organized into three sections:
 
