@@ -590,18 +590,18 @@ window.SHOWCASE_CASES = [
     id: "c08",
     addedAt: "2026-10-19T13:15:14+09:00",
     title: {
-      en: "KIPtech Solution — Industrial Robotics",
-      ja: "KIPtech Solution — 産業用ロボティクス",
+      en: "Robot-Arm Integration for a Client's Production Line",
+      ja: "顧客工場の生産ラインへのロボットアーム導入",
     },
     description: {
-      en: "An industrial robotics solution showcase developed for KIPtech with NVIDIA Isaac Sim. The combined film demonstrates machine tending, warehouse transport, visual inspection and multi-robot collaboration, bringing several factory automation workflows together in one presentation.",
-      ja: "KIPtech向けにNVIDIA Isaac Simで開発した産業用ロボティクスのソリューション映像です。工作機械へのワーク供給・搬出、倉庫内搬送、外観検査、複数ロボットの協調動作など、工場自動化のワークフローを1本の映像にまとめています。",
+      en: "For a client planning to introduce robot arms into a factory production line, I developed a simulation in NVIDIA Isaac Sim to visualize the proposed automation workflows. The film covers machine loading and unloading, material handling, warehouse transport, visual inspection and coordinated robot operations. It shows how robot-arm workcells connect with the surrounding production and logistics processes, providing a visual basis for discussing the client's integration plan.",
+      ja: "顧客の工場生産ラインへのロボットアーム導入に向け、想定する自動化工程をNVIDIA Isaac Simでシミュレーションしました。工作機械へのワーク供給・搬出、ワークのハンドリング、倉庫内搬送、外観検査、複数ロボットの協調動作を可視化しています。ロボットアームの作業セルと周辺の生産・物流工程とのつながりを示し、顧客と導入計画を検討するための映像にまとめました。",
     },
     clips: [
       {
         title: {
-          en: "KIPtech Solution — combined showcase",
-          ja: "KIPtech Solution — 総合デモ映像",
+          en: "Client production-line robot integration demo",
+          ja: "顧客工場の生産ラインへのロボット導入デモ",
         },
         videos: [
           {
@@ -614,14 +614,14 @@ window.SHOWCASE_CASES = [
     ],
     category: "robotics",
     engine: "NVIDIA Isaac Sim",
-    tags: ["Industrial robotics", "Automation", "Multi-robot"],
+    tags: ["Production line", "Robot integration", "Automation"],
     shortTitle: {
-      en: "KIPtech Solution",
-      ja: "KIPtech Solution",
+      en: "Client production-line robot integration",
+      ja: "顧客生産ラインへのロボットアーム導入",
     },
     summary: {
-      en: "Industrial robotics showcase: machine tending, warehouse transport, visual inspection and multi-robot collaboration.",
-      ja: "工作機械へのワーク供給・搬出、倉庫内搬送、外観検査、複数ロボットの協調動作を紹介。",
+      en: "Robot-arm integration into a client's factory production line, connecting handling, transport, inspection and coordinated operations.",
+      ja: "顧客工場の生産ラインへのロボットアーム導入。ハンドリング・搬送・検査・協調作業を工程として可視化。",
     },
     number: "08",
     previewClip: 0,
@@ -630,18 +630,18 @@ window.SHOWCASE_CASES = [
     id: "c09",
     addedAt: "2026-10-19T13:15:14+09:00",
     title: {
-      en: "Giga Ocean Robotics — Subsea Pipeline Intervention Concept",
-      ja: "Giga 海洋ロボティクス — 海底パイプライン作業コンセプト",
+      en: "Client Subsea Pipeline Maintenance — ROV Concept Demo",
+      ja: "顧客向け海底パイプライン保守 — ROVコンセプトデモ",
     },
     description: {
-      en: "A subsea intervention concept demo developed in NVIDIA Isaac Sim for the proposed KIPtech collaboration with Giga (Gigala / Ocean Intella). An ROV approaches a seabed pipeline, holds station against currents, localizes the worksite and positions its manipulator to trace a circumferential repair seam at a pipe joint. The demo includes contact-force feedback to the floating ROV body and post-task verification; welding is visualized at concept level.",
-      ja: "Giga（Gigala / Ocean Intella）とKIPtechの協業提案に向け、NVIDIA Isaac Simで開発した海底作業のコンセプトデモです。ROVが海底パイプラインへ接近し、海流下で定点保持しながら作業箇所を認識し、マニピュレータで管継手の円周方向の補修経路を追従します。接触力が浮遊するROV本体へ及ぼす影響と作業後の確認も示し、溶接はコンセプトとして可視化しています。",
+      en: "For a client's subsea pipeline maintenance project, I developed an ROV intervention concept demo in NVIDIA Isaac Sim. The robot approaches a seabed pipeline, holds station against currents, localizes the worksite and uses its manipulator to trace a circumferential repair seam at a pipe joint. The simulation shows how tool-contact forces affect the floating ROV body and how station keeping supports the task, followed by a verification step. Welding is visualized at concept level.",
+      ja: "顧客の海底パイプライン保守案件に向け、NVIDIA Isaac SimでROVによる作業コンセプトを開発しました。海底パイプラインへの接近、海流下での定点保持、作業箇所の認識、マニピュレータによる管継手の円周方向の補修経路追従を一連の流れとして示しています。ツールの接触力が浮遊するROV本体へ及ぼす影響と、作業を支える定点保持、作業後の確認までを可視化しました。溶接はコンセプトとして表現しています。",
     },
     clips: [
       {
         title: {
-          en: "Ocean robotics — ROV pipeline intervention concept demo",
-          ja: "海洋ロボティクス — ROVによるパイプライン作業コンセプトデモ",
+          en: "Client subsea pipeline maintenance concept demo",
+          ja: "顧客向け海底パイプライン保守コンセプトデモ",
         },
         videos: [
           {
@@ -656,12 +656,12 @@ window.SHOWCASE_CASES = [
     engine: "NVIDIA Isaac Sim",
     tags: ["ROV", "Marine robotics", "Contact control"],
     shortTitle: {
-      en: "Giga ocean robotics",
-      ja: "Giga 海洋ロボティクス",
+      en: "Client subsea pipeline maintenance",
+      ja: "顧客向け海底パイプライン保守",
     },
     summary: {
-      en: "Subsea ROV concept: station keeping, worksite localization and manipulator tracking along a pipeline repair seam.",
-      ja: "海底ROVのコンセプトデモ。定点保持、作業箇所の認識、パイプライン補修経路への追従を実演。",
+      en: "ROV concept for a client's pipeline maintenance: station keeping, worksite localization and repair-path tracking under currents and tool contact.",
+      ja: "顧客のパイプライン保守に向けたROVコンセプト。海流・接触力の下での定点保持、作業箇所認識、補修経路追従を実演。",
     },
     number: "09",
     previewClip: 0,
