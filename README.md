@@ -42,8 +42,8 @@ opening or reloading the page starts with newest first.
 | `03_agriculture_spray/ja` | SPH spraying simulator prototype developed for client coverage and drift assessment |
 | `01_isaac_picking` | OpenArm picking solution developed for a client using RL in NVIDIA Isaac |
 | `07_isaaclab_4arm_sorting` | Client recycling-sorting solution; video presents the four-arm scheduling concept |
-| `08_kiptech_solution` | Case 08: Robot-arm integration into a client's factory production line |
-| `09_giga_ocean_robotics` | Case 09: Client subsea pipeline maintenance, demonstrated with an ROV concept |
+| `08_kiptech_solution` | Case 08: Robot arms on the production line |
+| `09_giga_ocean_robotics` | Case 09: Subsea pipeline repair concept |
 
 There are 26 demonstrations with 43 MP4 files including language variants.
 `SHA256SUMS` records their hashes.

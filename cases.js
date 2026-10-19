@@ -590,18 +590,18 @@ window.SHOWCASE_CASES = [
     id: "c08",
     addedAt: "2026-10-19T13:15:14+09:00",
     title: {
-      en: "Robot-Arm Integration for a Client's Production Line",
-      ja: "顧客工場の生産ラインへのロボットアーム導入",
+      en: "Robot Arms on the Production Line",
+      ja: "生産ラインにロボットアームを",
     },
     description: {
-      en: "For a client planning to introduce robot arms into a factory production line, I developed a simulation in NVIDIA Isaac Sim to visualize the proposed automation workflows. The film covers machine loading and unloading, material handling, warehouse transport, visual inspection and coordinated robot operations. It shows how robot-arm workcells connect with the surrounding production and logistics processes, providing a visual basis for discussing the client's integration plan.",
-      ja: "顧客の工場生産ラインへのロボットアーム導入に向け、想定する自動化工程をNVIDIA Isaac Simでシミュレーションしました。工作機械へのワーク供給・搬出、ワークのハンドリング、倉庫内搬送、外観検査、複数ロボットの協調動作を可視化しています。ロボットアームの作業セルと周辺の生産・物流工程とのつながりを示し、顧客と導入計画を検討するための映像にまとめました。",
+      en: "Robot arms load machines, move parts and inspect finished pieces. The challenge is getting each step to fit into the rhythm of the production line. In this Isaac Sim demo, the arms work alongside transport robots and inspection stations to show how the line could run before equipment is installed.",
+      ja: "工作機械に部品を入れ、加工した部品を運び、仕上がりを確かめる。生産ラインにロボットアームを取り入れるには、一つひとつの動きを前後の工程につなげる必要があります。このデモでは、アームや搬送ロボット、検査装置が連携する様子をIsaac Simで再現し、導入後のラインの動きを描いています。",
     },
     clips: [
       {
         title: {
-          en: "Client production-line robot integration demo",
-          ja: "顧客工場の生産ラインへのロボット導入デモ",
+          en: "Production-line simulation",
+          ja: "生産ラインのシミュレーション",
         },
         videos: [
           {
@@ -616,12 +616,12 @@ window.SHOWCASE_CASES = [
     engine: "NVIDIA Isaac Sim",
     tags: ["Production line", "Robot integration", "Automation"],
     shortTitle: {
-      en: "Client production-line robot integration",
-      ja: "顧客生産ラインへのロボットアーム導入",
+      en: "Robot arms on the production line",
+      ja: "生産ラインにロボットアームを",
     },
     summary: {
-      en: "Robot-arm integration into a client's factory production line, connecting handling, transport, inspection and coordinated operations.",
-      ja: "顧客工場の生産ラインへのロボットアーム導入。ハンドリング・搬送・検査・協調作業を工程として可視化。",
+      en: "From loading machines to checking quality, robot arms become part of the production line.",
+      ja: "部品の投入から搬送、検査まで。ロボットアームが加わる生産ラインをシミュレーション。",
     },
     number: "08",
     previewClip: 0,
@@ -630,18 +630,18 @@ window.SHOWCASE_CASES = [
     id: "c09",
     addedAt: "2026-10-19T13:15:14+09:00",
     title: {
-      en: "Client Subsea Pipeline Maintenance — ROV Concept Demo",
-      ja: "顧客向け海底パイプライン保守 — ROVコンセプトデモ",
+      en: "Subsea Pipeline Repair",
+      ja: "海底パイプラインの補修",
     },
     description: {
-      en: "For a client's subsea pipeline maintenance project, I developed an ROV intervention concept demo in NVIDIA Isaac Sim. The robot approaches a seabed pipeline, holds station against currents, localizes the worksite and uses its manipulator to trace a circumferential repair seam at a pipe joint. The simulation shows how tool-contact forces affect the floating ROV body and how station keeping supports the task, followed by a verification step. Welding is visualized at concept level.",
-      ja: "顧客の海底パイプライン保守案件に向け、NVIDIA Isaac SimでROVによる作業コンセプトを開発しました。海底パイプラインへの接近、海流下での定点保持、作業箇所の認識、マニピュレータによる管継手の円周方向の補修経路追従を一連の流れとして示しています。ツールの接触力が浮遊するROV本体へ及ぼす影響と、作業を支える定点保持、作業後の確認までを可視化しました。溶接はコンセプトとして表現しています。",
+      en: "An underwater robot needs to hold its position while the current pushes against it and its arm presses on a pipe. This concept demo follows the robot as it approaches a damaged pipeline, finds the worksite and traces a repair seam around the joint. The vehicle keeps correcting its position throughout the task, then inspects the result.",
+      ja: "海流の中で機体を止めたまま、アームを伸ばしてパイプを補修する。水中では、アームがパイプに触れた反力も機体を動かします。このコンセプトデモでは、海底のパイプラインに近づき、作業箇所を見つけ、継ぎ目に沿って補修経路をたどるまでを再現しました。作業中は姿勢を保ち、最後に仕上がりを確認します。",
     },
     clips: [
       {
         title: {
-          en: "Client subsea pipeline maintenance concept demo",
-          ja: "顧客向け海底パイプライン保守コンセプトデモ",
+          en: "Underwater repair concept",
+          ja: "水中補修のコンセプトデモ",
         },
         videos: [
           {
@@ -656,12 +656,12 @@ window.SHOWCASE_CASES = [
     engine: "NVIDIA Isaac Sim",
     tags: ["ROV", "Marine robotics", "Contact control"],
     shortTitle: {
-      en: "Client subsea pipeline maintenance",
-      ja: "顧客向け海底パイプライン保守",
+      en: "Subsea pipeline repair",
+      ja: "海底パイプラインの補修",
     },
     summary: {
-      en: "ROV concept for a client's pipeline maintenance: station keeping, worksite localization and repair-path tracking under currents and tool contact.",
-      ja: "顧客のパイプライン保守に向けたROVコンセプト。海流・接触力の下での定点保持、作業箇所認識、補修経路追従を実演。",
+      en: "An underwater robot holds steady in the current while its arm follows a repair seam.",
+      ja: "海流に流されずに姿勢を保ち、アームでパイプの継ぎ目をたどる水中ロボット。",
     },
     number: "09",
     previewClip: 0,
