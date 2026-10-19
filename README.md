@@ -29,8 +29,8 @@ EN / 日本語ボタンで表示言語を切り替えます。対応する言語
 | `01_isaac_picking` | OpenArm grasping and policy-learning demonstrations in NVIDIA Isaac |
 | `07_isaaclab_4arm_sorting` | Storyboarded concept demo of four-arm recycling sorting |
 
-There are 25 demonstrations with 42 MP4 files including language variants and
-previous cuts. All original videos are retained. `SHA256SUMS` records their hashes.
+There are 24 demonstrations with 41 MP4 files including language variants.
+`SHA256SUMS` records their hashes.
 The case descriptions distinguish evaluation work, prototypes and concept demos.
 Source projects, checkpoints and raw captures are not included.
 

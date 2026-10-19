@@ -525,19 +525,6 @@ window.SHOWCASE_CASES = [
           },
         ],
       },
-      {
-        title: {
-          en: "Solution overview (earlier cut, v2)",
-          ja: "ソリューション概要(旧版 v2)",
-        },
-        videos: [
-          {
-            lang: "ja",
-            src: "01_isaac_picking/openarm_physical_ai_solution_ja_1080p50_v2.mp4",
-            poster: "assets/posters/c01-03-ja.jpg",
-          },
-        ],
-      },
     ],
     category: "robotics",
     engine: "NVIDIA Isaac",
