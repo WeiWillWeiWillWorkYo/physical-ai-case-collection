@@ -191,6 +191,13 @@ h1 {
   color: var(--muted);
   margin: 0;
 }
+.intro-notice {
+  max-width: 610px;
+  margin: 20px 0 0;
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.85;
+}
 .intro-stats {
   display: flex;
   flex-shrink: 0;
@@ -759,6 +766,9 @@ html[lang="ja"] .brand-name {
   }
 }
 @media (max-width: 560px) {
+  .intro-notice {
+    font-size: 11px;
+  }
   .shell {
     width: calc(100% - 36px);
   }

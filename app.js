@@ -10,6 +10,8 @@
       siteTitle: "Physical AI Showcase",
       intro:
         "Engineering solutions I developed for clients, using robotics, reinforcement learning and particle simulation to address their technical challenges.",
+      disclosure:
+        "No client data was used. Any client company names or other client information shown are included with permission.",
       eyebrow: "CLIENT ENGINEERING SOLUTIONS",
       caseStat: "simulation cases",
       demoStat: "video demonstrations",
@@ -50,6 +52,8 @@
       siteTitle: "Physical AI ショーケース",
       intro:
         "顧客の技術課題に対して、私が開発したエンジニアリングソリューションの実績。ロボティクス・強化学習・粒子シミュレーションを活用した案件を紹介します。",
+      disclosure:
+        "顧客データは使用していません。顧客企業名などの情報を掲載している場合は、すべて許可を得ています。",
       eyebrow: "顧客向けエンジニアリングソリューション",
       caseStat: "シミュレーション事例",
       demoStat: "デモ映像",
