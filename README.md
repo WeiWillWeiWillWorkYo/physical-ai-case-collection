@@ -35,13 +35,13 @@ opening or reloading the page starts with newest first.
 
 | Directory | Contents |
 |---|---|
-| `04_genesis_drone` | Client drone-simulation solution: control, parallel RL, robustness and inspection capability assessment |
-| `05_genesis_franka_arm` | Client robot-arm solution: Franka control, manipulation, contact and assembly capability assessment |
-| `06_genesis_openarm_ppo` | Client dual-arm control development with OpenArm and PPO |
-| `02_snow_vehicle/ja` | DEM snow-driving simulator developed for client visibility and sensor-risk assessment |
-| `03_agriculture_spray/ja` | SPH spraying simulator prototype developed for client coverage and drift assessment |
-| `01_isaac_picking` | OpenArm picking solution developed for a client using RL in NVIDIA Isaac |
-| `07_isaaclab_4arm_sorting` | Client recycling-sorting solution; video presents the four-arm scheduling concept |
+| `04_genesis_drone` | Drone motor control, autonomous flight and parallel RL in Genesis |
+| `05_genesis_franka_arm` | Franka picking and assembly with IK, contact monitoring and parallel RL |
+| `06_genesis_openarm_ppo` | OpenArm dual-arm control with PPO across materials and tasks |
+| `02_snow_vehicle/ja` | DEM snow spray, forward visibility and sensor risk during driving |
+| `03_agriculture_spray/ja` | SPH drone-spraying prototype for field coverage and drift |
+| `01_isaac_picking` | OpenArm picking with RL in NVIDIA Isaac and a Sim-to-Real workflow |
+| `07_isaaclab_4arm_sorting` | Four-arm recycling concept with VLA-based perception and shared scheduling |
 | `08_kiptech_solution` | Case 08: Robot arms on the production line |
 | `09_giga_ocean_robotics` | Case 09: Subsea pipeline repair concept |
 

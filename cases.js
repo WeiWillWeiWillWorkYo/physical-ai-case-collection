@@ -4,12 +4,12 @@ window.SHOWCASE_CASES = [
     id: "c04",
     addedAt: "2026-08-03T17:18:52+09:00",
     title: {
-      en: "Genesis Drone Simulation Capability Assessment",
-      ja: "Genesis ドローンシミュレーション適性評価",
+      en: "From Motor Control To Autonomous Flight",
+      ja: "モータ制御から自律飛行へ",
     },
     description: {
-      en: "For a client's drone-simulation solution, I assessed Genesis against the required control, reinforcement-learning and robustness capabilities. I evaluated direct motor control, interactive and waypoint flight, parallel RL training, policy improvement, disturbance response and the client's inspection mission.",
-      ja: "顧客向けドローンシミュレーションソリューションの開発として、Genesisが要求される制御・強化学習・ロバスト性に対応できるかを評価しました。モータの直接制御、対話操縦、経路指定飛行、並列RL学習、方策改善、外乱への応答、顧客の巡検ミッションまで検証しました。",
+      en: "A drone turns a destination into coordinated changes in motor RPM, then has to keep flying when disturbances hit. These Genesis demos follow that chain from direct motor and keyboard control to waypoint flight and parallel reinforcement learning (RL). They compare policies before and after training, test their response to disturbances and bring the pieces together in an inspection mission.",
+      ja: "目的地へ向かうドローンは、各モータのRPMを調整し、外乱を受けても飛行を保つ必要があります。Genesis上でモータの直接制御、キーボード操縦、経路指定飛行を試し、並列RLで飛行方策を学習しました。学習前後の動きや外乱への応答を比べながら、巡検ミッションまで一連の動作を確かめています。",
     },
     clips: [
       {
@@ -140,8 +140,8 @@ window.SHOWCASE_CASES = [
       },
       {
         title: {
-          en: "Customer inspection mission",
-          ja: "顧客業務の巡検ミッション評価",
+          en: "Inspection flight",
+          ja: "巡検飛行",
         },
         videos: [
           {
@@ -161,12 +161,12 @@ window.SHOWCASE_CASES = [
     engine: "Genesis",
     tags: ["Control", "RL", "Robustness"],
     shortTitle: {
-      en: "Drone simulation & control",
-      ja: "ドローンのシミュレーション・制御",
+      en: "Drone Control And Autonomous Flight",
+      ja: "ドローンの制御と自律飛行",
     },
     summary: {
-      en: "Client drone-simulation solution: motor control, parallel RL, robustness and inspection capability assessment.",
-      ja: "顧客向けドローンシミュレーション開発。制御・並列RL・外乱対応・巡検業務への適用性を検証。",
+      en: "Motor RPM control, waypoint flight and parallel RL, brought together in a drone inspection mission.",
+      ja: "モータRPM制御から経路飛行、並列RLまで。巡検ミッションで飛行方策の動きを確かめる。",
     },
     number: "01",
     previewClip: 7,
@@ -175,12 +175,12 @@ window.SHOWCASE_CASES = [
     id: "c05",
     addedAt: "2026-08-03T17:18:52+09:00",
     title: {
-      en: "Genesis Manipulator Capability Assessment (Franka)",
-      ja: "Genesis マニピュレータ適性評価(Franka)",
+      en: "Picking And Assembly With Franka",
+      ja: "Frankaでつかむ・運ぶ・組み立てる",
     },
     description: {
-      en: "For the same client's robot-arm solution, I assessed Genesis from joint control through manipulation and learning. The work covered joint-space servoing, IK path tracking, gripper pick-and-place, contact and quality monitoring, parallel RL training, policy comparison, domain-randomization robustness and the client's assembly mission.",
-      ja: "同じ顧客向けソリューション開発のロボットアーム案件として、Genesisの関節制御からマニピュレーション・学習までの適用性を評価しました。関節サーボ、IK経路追従、ピックアンドプレース、接触・品質モニタリング、並列RL学習、方策比較、ドメインランダム化によるロバスト性、顧客の組立ミッションまで検証しました。",
+      en: "The arm has to reach the part, close the gripper and control contact as it places or assembles it. In Genesis, these Franka demos connect joint-space servo control and IK-based TCP tracking with grasping, contact monitoring and assembly. Parallel RL training and domain randomization explore how the learned policy behaves as task conditions change.",
+      ja: "部品に手を伸ばし、グリッパでつかみ、接触を確かめながら置く・組み立てる。Genesis上のFrankaで、関節サーボ制御とIKによるTCP経路追従から、把持・接触モニタリング・組立までを試しています。並列RLとドメインランダム化では条件を変え、学習した方策の動作を比較しました。",
     },
     clips: [
       {
@@ -311,8 +311,8 @@ window.SHOWCASE_CASES = [
       },
       {
         title: {
-          en: "Customer assembly mission",
-          ja: "顧客向け組立ミッション",
+          en: "Assembly task",
+          ja: "組立タスク",
         },
         videos: [
           {
@@ -332,12 +332,12 @@ window.SHOWCASE_CASES = [
     engine: "Genesis",
     tags: ["Manipulation", "RL", "Contact"],
     shortTitle: {
-      en: "Franka manipulation solution",
-      ja: "Franka マニピュレーションソリューション",
+      en: "Picking And Assembly With Franka",
+      ja: "Frankaでつかむ・運ぶ・組み立てる",
     },
     summary: {
-      en: "Client robot-arm solution development: joint control, IK, pick-and-place and assembly capability assessment.",
-      ja: "顧客向けロボットアームソリューション開発。関節制御・IK・把持・組立への適用性を検証。",
+      en: "Picking, placing and assembly with Franka, using IK, contact monitoring and parallel RL in Genesis.",
+      ja: "IKによる経路追従、接触モニタリング、並列RLでFrankaの把持と組立を試す。",
     },
     number: "02",
     previewClip: 2,
@@ -346,12 +346,12 @@ window.SHOWCASE_CASES = [
     id: "c06",
     addedAt: "2026-08-03T17:18:52+09:00",
     title: {
-      en: "Genesis OpenArm Dual-Arm Control with PPO",
-      ja: "Genesis OpenArm 双腕PPO制御",
+      en: "Learning Dual-Arm Control With PPO",
+      ja: "PPOで学ぶ双腕制御",
     },
     description: {
-      en: "As part of the client's Genesis assessment, I trained PPO policies for dual-arm OpenArm control and evaluated their behavior across object materials, tasks and random seeds to check policy consistency.",
-      ja: "顧客向けGenesis適性評価の一環として、双腕OpenArm制御のPPO方策を学習しました。対象物の素材・タスク・乱数シードを変えて動作を評価し、方策の一貫性を確認しました。",
+      en: "The two OpenArm arms need to coordinate their motion while handling objects with different material properties. PPO policies trained in Genesis are evaluated on outward, lift and split tasks using rubber, POM, resin and metal objects. The clips compare selected runs across tasks, materials and random seeds.",
+      ja: "2本のOpenArmを協調させ、素材の異なる物体を動かします。Genesis上でPPO方策を学習し、ゴム・POM・樹脂・金属を使ったoutward・lift・splitの各タスクで動作を比較しました。各映像に素材と乱数シードを添え、どの条件でどんな動きになったかを見られるようにしています。",
     },
     clips: [
       {
@@ -398,12 +398,12 @@ window.SHOWCASE_CASES = [
     engine: "Genesis",
     tags: ["Dual-arm", "PPO"],
     shortTitle: {
-      en: "Dual-arm control with PPO",
-      ja: "PPOによる双腕ロボット制御",
+      en: "Learning Dual-Arm Control With PPO",
+      ja: "PPOで学ぶ双腕制御",
     },
     summary: {
-      en: "Dual-arm control for a client solution, with PPO policies evaluated across materials, tasks and random seeds.",
-      ja: "顧客向け双腕制御の開発。素材・タスク・乱数シードを変えてPPO方策の一貫性を評価。",
+      en: "Comparing PPO dual-arm policies across rubber, POM, resin and metal objects.",
+      ja: "ゴム・POM・樹脂・金属を扱うOpenArm。PPO方策の双腕動作を比較。",
     },
     number: "03",
     previewClip: 1,
@@ -412,12 +412,12 @@ window.SHOWCASE_CASES = [
     id: "c02",
     addedAt: "2026-08-03T17:18:52+09:00",
     title: {
-      en: "High-Speed Driving on Snow — DEM Snow Simulation",
-      ja: "雪道高速走行 — DEMによる雪のシミュレーション",
+      en: "Driving Through Snow With DEM",
+      ja: "DEMで見る雪道走行と巻き上げ",
     },
     description: {
-      en: "Client engagement: develop an API that reproduces Rocky-DEM-class capability to simulate vehicles driving at high speed on snow. The snow in this video is fully DEM-based (discrete element method). The scenario evaluates forward visibility degradation and sensor-risk under snow spray thrown up by the vehicle.",
-      ja: "顧客案件:Rocky DEM 相当の機能を再現するAPIを開発し、雪道での高速走行をシミュレーション。映像中の雪はすべてDEM(離散要素法)で実装。巻き上げられた雪による前方視界の劣化とセンサーリスクを評価します。",
+      en: "As a vehicle drives through snow, the spray it throws up can obscure the road ahead and affect its sensors. This simulation models the snow with DEM (discrete element method) and tracks the resulting loss of forward visibility and sensor risk during high-speed driving.",
+      ja: "車が雪道を走ると、巻き上がった雪が前方の視界やセンサーの見え方を変えます。このシミュレーションでは雪をDEM（離散要素法）の粒子として扱い、高速走行で雪が舞い上がる様子を再現しました。前方視界の低下とセンサーリスクを指標に、走行中の影響を見ています。",
     },
     clips: [
       {
@@ -438,12 +438,12 @@ window.SHOWCASE_CASES = [
     engine: "DEM",
     tags: ["Snow", "Sensors"],
     shortTitle: {
-      en: "Driving through snow",
-      ja: "雪道走行とセンサーリスク",
+      en: "Snow Driving With DEM",
+      ja: "DEMで見る雪道走行",
     },
     summary: {
-      en: "Developed DEM snow simulation for a client's vehicle visibility and sensor-risk assessment.",
-      ja: "顧客向けにDEM雪道走行シミュレーションを開発。前方視界とセンサーリスクを評価。",
+      en: "DEM snow particles show how vehicle spray reduces forward visibility and affects sensors.",
+      ja: "DEMで雪の巻き上げを再現。高速走行時の視界とセンサーへの影響を見る。",
     },
     number: "04",
     previewClip: 0,
@@ -452,12 +452,12 @@ window.SHOWCASE_CASES = [
     id: "c03",
     addedAt: "2026-08-03T17:18:52+09:00",
     title: {
-      en: "Agricultural Drone Spraying — SPH Coverage and Drift",
-      ja: "農業ドローン散布 — SPHによる被覆率・ドリフト評価",
+      en: "Drone Spraying With SPH",
+      ja: "SPHで見るドローン散布",
     },
     description: {
-      en: "Client engagement: prototype a simulator for drone pesticide spraying with quantitative coverage testing. The spray plume is modeled with SPH (smoothed-particle hydrodynamics); the video evaluates field coverage ratio and drift.",
-      ja: "顧客案件:ドローン農薬散布と被覆率テストのプロトタイプ開発。噴霧はSPH(平滑粒子流体力学)で実装し、圃場の被覆率とドリフトを評価しています。",
+      en: "A spraying drone needs to cover a field evenly while limiting spray that drifts away from the target area. This prototype uses SPH (smoothed-particle hydrodynamics) to model the spray plume and measures field coverage and drift. The demo shows the spray distribution alongside those measurements to make uneven coverage visible.",
+      ja: "圃場全体にむらなく散布し、狙った場所の外へ流れる量を抑える。ドローンの噴霧をSPH（Smoothed Particle Hydrodynamics）で扱うプロトタイプを作り、圃場の被覆率とドリフトを計測しています。散布の分布と評価指標を同じ画面で見ながら、被覆の偏りを確かめます。",
     },
     clips: [
       {
@@ -478,12 +478,12 @@ window.SHOWCASE_CASES = [
     engine: "SPH",
     tags: ["Spray", "Coverage"],
     shortTitle: {
-      en: "Agricultural spraying simulator",
-      ja: "農業ドローン散布シミュレータ",
+      en: "Drone Spraying With SPH",
+      ja: "SPHで見るドローン散布",
     },
     summary: {
-      en: "Developed an SPH spraying simulator prototype for a client's coverage and drift evaluation.",
-      ja: "顧客向け散布シミュレータのプロトタイプを開発。SPHで被覆率とドリフトを評価。",
+      en: "Following the spray with SPH to see field coverage, uneven deposition and drift.",
+      ja: "SPHで噴霧の広がりを追い、圃場の被覆率と散布の偏り、ドリフトを見る。",
     },
     number: "05",
     previewClip: 0,
@@ -492,18 +492,18 @@ window.SHOWCASE_CASES = [
     id: "c01",
     addedAt: "2026-08-03T17:18:52+09:00",
     title: {
-      en: "OpenArm Pick-and-Place in NVIDIA Isaac — RL to Sim-to-Real",
-      ja: "OpenArm ピッキング(NVIDIA Isaac)— RLからSim-to-Realへ",
+      en: "OpenArm Picking With RL",
+      ja: "RLで学ぶOpenArmのピッキング",
     },
     description: {
-      en: "For a client's robot-picking solution, I evaluated OpenArm and developed grasping policies with reinforcement learning using open assets in NVIDIA Isaac. The policies achieved stable, repeatable picking and can be deployed to the physical unit for sim-to-real transfer.",
-      ja: "顧客向けピッキングソリューションの開発として、OpenArmを評価し、NVIDIA Isaac上でオープンアセットを用いたRL把持方策を開発しました。安定したピッキングを実現し、得られた方策はSim-to-Realによる実機展開が可能です。",
+      en: "OpenArm learns to grasp and lift objects through reinforcement learning (RL) in NVIDIA Isaac. The films show repeatable picking in simulation and the Sim-to-Real workflow for moving the learned policy toward a physical robot. The simulated scene uses open assets.",
+      ja: "OpenArmが物体をつかんで持ち上げる動きを、NVIDIA Isaac上の強化学習（RL）で学びます。映像では、学習した方策による繰り返しのピッキングと、シミュレーションから実機へつなぐSim-to-Realの流れを紹介しています。シーンにはオープンアセットを使っています。",
     },
     clips: [
       {
         title: {
-          en: "Physical AI solution overview (v3)",
-          ja: "Physical AI ソリューション概要(v3)",
+          en: "RL picking and the Sim-to-Real workflow",
+          ja: "RLピッキングとSim-to-Realの流れ",
         },
         videos: [
           {
@@ -536,12 +536,12 @@ window.SHOWCASE_CASES = [
     engine: "NVIDIA Isaac",
     tags: ["OpenArm", "RL", "Sim-to-Real"],
     shortTitle: {
-      en: "OpenArm picking solution",
-      ja: "OpenArm ピッキングソリューション",
+      en: "OpenArm Picking With RL",
+      ja: "RLで学ぶOpenArmのピッキング",
     },
     summary: {
-      en: "Developed an OpenArm picking solution with RL-trained grasping policies for a client's sim-to-real application.",
-      ja: "顧客向けにRL把持方策を用いたOpenArmピッキングソリューションを開発。Sim-to-Realに対応。",
+      en: "RL picking with OpenArm, from training in NVIDIA Isaac to the Sim-to-Real workflow.",
+      ja: "NVIDIA IsaacでOpenArmの把持をRL学習。繰り返しのピッキングとSim-to-Realへの流れを紹介。",
     },
     number: "06",
     previewClip: 0,
@@ -550,18 +550,18 @@ window.SHOWCASE_CASES = [
     id: "c07",
     addedAt: "2026-08-13T02:07:17+09:00",
     title: {
-      en: "Four-Arm Collaborative Recycling Sorting on a Wood-Chip Stream",
-      ja: "木屑流からの資源回収 — 4アーム協調ソーティング",
+      en: "Four Arms Sorting A Moving Wood-Chip Stream",
+      ja: "流れる木屑から4本のアームで資源を拾う",
     },
     description: {
-      en: "Client engagement: build a solution that detects and picks recyclable objects (glass, metal, solid wood) out of a moving wood-chip stream. The proposed architecture combines VLA-based perception with multi-arm collaboration coordinated by a master scheduling policy: a shared global target pool, intercept prediction, cost-based dynamic assignment and reassignment, and collision-aware parallel execution across four identical arms. The 24-second storyboarded demo (Isaac Lab) visualizes the scheduler making assignment decisions live, including workload balancing, a mid-task reservation transfer to a downstream arm, and simultaneous picks.",
-      ja: "顧客案件:流動する木屑ストリームからガラス・金属・木材などのリサイクル対象を認識・把持するソリューション。VLAベースの認識と、マスター方策による多腕協調(共有ターゲットプール/迎撃予測/コストベースの動的割当・再割当/衝突回避並列実行)を組み合わせた構成です。絵コンテに基づく24秒のコンセプトデモ(Isaac Lab)では負荷分散、下流アームへの予約移譲、同時ピックなどスケジューラの意思決定を可視化しています。",
+      en: "Four arms share the work as recyclable glass, metal and solid wood move past in a stream of wood chips. The proposed system pairs VLA-based perception with a master scheduling policy: a shared target pool, intercept prediction and cost-based assignment determine who picks what. A 24-second storyboarded Isaac Lab demo illustrates load balancing, reassignment to a downstream arm and simultaneous picks, with collision-aware parallel execution.",
+      ja: "流れてくる木屑の中から、4本のアームでガラス・金属・無垢材を拾い出します。想定するシステムは、VLAベースの認識とマスター方策によるスケジューリングを組み合わせ、共有ターゲットプール、把持位置・タイミングの予測、コストに基づく動的割当・再割当で作業を分けます。Isaac Labによる24秒のコンセプト映像で、負荷分散、下流アームへの引継ぎ、衝突を考慮した並列動作と同時ピックを示しました。",
     },
     clips: [
       {
         title: {
-          en: "Storyboarded 24 s concept demo (EN)",
-          ja: "絵コンテに基づく24秒コンセプトデモ(英語版)",
+          en: "Four-arm scheduling concept (24 s)",
+          ja: "4アームの作業割当コンセプト（24秒）",
         },
         videos: [
           {
@@ -576,12 +576,12 @@ window.SHOWCASE_CASES = [
     engine: "Isaac Lab",
     tags: ["Multi-arm", "Scheduling"],
     shortTitle: {
-      en: "Four-arm recycling sorting",
-      ja: "4アーム協調による資源回収",
+      en: "Four Arms On The Sorting Line",
+      ja: "選別ラインで働く4本のアーム",
     },
     summary: {
-      en: "Engineering solution for a client's recycling process, with a concept demo of four-arm scheduling.",
-      ja: "顧客の資源回収工程に向けた4アーム協調ソリューション。作業割当をコンセプト映像で提示。",
+      en: "A four-arm sorting concept with shared targets, dynamic reassignment and parallel picks.",
+      ja: "ターゲットを共有し、担当を引き継ぎ、同時に拾う。4本のアームによる資源回収のコンセプト。",
     },
     number: "07",
     previewClip: 0,
@@ -590,7 +590,7 @@ window.SHOWCASE_CASES = [
     id: "c08",
     addedAt: "2026-10-19T13:15:14+09:00",
     title: {
-      en: "Robot Arms on the Production Line",
+      en: "Robot Arms On The Production Line",
       ja: "生産ラインにロボットアームを",
     },
     description: {
@@ -616,7 +616,7 @@ window.SHOWCASE_CASES = [
     engine: "NVIDIA Isaac Sim",
     tags: ["Production line", "Robot integration", "Automation"],
     shortTitle: {
-      en: "Robot arms on the production line",
+      en: "Robot Arms On The Production Line",
       ja: "生産ラインにロボットアームを",
     },
     summary: {
@@ -656,7 +656,7 @@ window.SHOWCASE_CASES = [
     engine: "NVIDIA Isaac Sim",
     tags: ["ROV", "Marine robotics", "Contact control"],
     shortTitle: {
-      en: "Subsea pipeline repair",
+      en: "Subsea Pipeline Repair",
       ja: "海底パイプラインの補修",
     },
     summary: {
