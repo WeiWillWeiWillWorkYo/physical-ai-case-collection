@@ -2,10 +2,14 @@
 
 [Live showcase / 展示ページ](https://weiwillweiwillworkyo.github.io/physical-ai-case-collection/)
 
-Physical AI simulation studies and engineering demonstrations by WEI / 崔 煒.
+Engineering solutions developed by WEI / 崔 煒 for clients, applying robotics,
+reinforcement learning and particle simulation to their technical challenges.
+
+顧客の技術課題に対して、崔 煒（WEI）が開発したエンジニアリングソリューションの実績を紹介します。
+
 The public GitHub Pages site is organized into three sections:
 
-- **Simulation Cases / シミュレーション事例** — seven case studies, with field filters, date sorting, descriptions and video players.
+- **Simulation Cases / シミュレーション事例** — seven client projects, with field filters, date sorting, descriptions and video players.
 - **Solvers / ソルバー** — currently empty; content will be selected later.
 - **Papers / 論文** — currently empty; content will be selected later.
 
@@ -31,13 +35,13 @@ opening or reloading the page starts with newest first.
 
 | Directory | Contents |
 |---|---|
-| `04_genesis_drone` | Drone control, parallel RL, robustness and inspection workflows |
-| `05_genesis_franka_arm` | Franka control, manipulation, contact and learning workflows |
-| `06_genesis_openarm_ppo` | Dual-arm OpenArm PPO policy rollouts |
-| `02_snow_vehicle/ja` | DEM snow spray, visibility and sensor-risk evaluation |
-| `03_agriculture_spray/ja` | SPH agricultural spraying, coverage and drift prototype |
-| `01_isaac_picking` | OpenArm grasping and policy-learning demonstrations in NVIDIA Isaac |
-| `07_isaaclab_4arm_sorting` | Storyboarded concept demo of four-arm recycling sorting |
+| `04_genesis_drone` | Client drone-simulation solution: control, parallel RL, robustness and inspection capability assessment |
+| `05_genesis_franka_arm` | Client robot-arm solution: Franka control, manipulation, contact and assembly capability assessment |
+| `06_genesis_openarm_ppo` | Client dual-arm control development with OpenArm and PPO |
+| `02_snow_vehicle/ja` | DEM snow-driving simulator developed for client visibility and sensor-risk assessment |
+| `03_agriculture_spray/ja` | SPH spraying simulator prototype developed for client coverage and drift assessment |
+| `01_isaac_picking` | OpenArm picking solution developed for a client using RL in NVIDIA Isaac |
+| `07_isaaclab_4arm_sorting` | Client recycling-sorting solution; video presents the four-arm scheduling concept |
 
 There are 24 demonstrations with 41 MP4 files including language variants.
 `SHA256SUMS` records their hashes.

@@ -8,8 +8,8 @@ window.SHOWCASE_CASES = [
       ja: "Genesis ドローンシミュレーション適性評価",
     },
     description: {
-      en: "Client engagement: assess whether the open-source Genesis engine can carry drone-simulation workloads. I ran a structured evaluation from basic function tests through RL and sim-to-real oriented robustness: direct API motor control, interactive flight, autonomous waypoint flight, an RL training environment with parallel policy learning, before/after policy comparison, disturbance stress tests, and a customer inspection mission.",
-      ja: "顧客案件:オープンソースのGenesisがドローンシミュレーション用途を担えるかの適性評価。API直下のモータ制御から、対話操縦、自動飛行、並列RL学習、学習前後比較、外乱ロバスト性、顧客の巡検ミッションまで段階的に検証しました(基本機能テスト+Sim-to-Real+RL)。",
+      en: "For a client's drone-simulation solution, I assessed Genesis against the required control, reinforcement-learning and robustness capabilities. I evaluated direct motor control, interactive and waypoint flight, parallel RL training, policy improvement, disturbance response and the client's inspection mission.",
+      ja: "顧客向けドローンシミュレーションソリューションの開発として、Genesisが要求される制御・強化学習・ロバスト性に対応できるかを評価しました。モータの直接制御、対話操縦、経路指定飛行、並列RL学習、方策改善、外乱への応答、顧客の巡検ミッションまで検証しました。",
     },
     clips: [
       {
@@ -165,8 +165,8 @@ window.SHOWCASE_CASES = [
       ja: "ドローンのシミュレーション・制御",
     },
     summary: {
-      en: "From motor control and parallel RL to robustness tests and an inspection mission.",
-      ja: "モータ制御から並列RL、外乱下の検証、巡検ミッションまで。",
+      en: "Client drone-simulation solution: motor control, parallel RL, robustness and inspection capability assessment.",
+      ja: "顧客向けドローンシミュレーション開発。制御・並列RL・外乱対応・巡検業務への適用性を検証。",
     },
     number: "01",
     previewClip: 7,
@@ -179,8 +179,8 @@ window.SHOWCASE_CASES = [
       ja: "Genesis マニピュレータ適性評価(Franka)",
     },
     description: {
-      en: "Same Genesis-assessment engagement, manipulator side: verifying that Genesis carries robot-arm workloads end to end — joint-space servoing, IK path tracking, gripper pick-and-place, contact/quality monitoring, parallel RL policy training, before/after comparison, domain-randomization robustness, and a customer assembly mission.",
-      ja: "同じGenesis適性評価案件のマニピュレータ編:関節サーボ、IK経路追従、ピックアンドプレース、接触・品質モニタリング、並列RL学習、学習前後比較、ドメインランダム化によるロバスト性、顧客の組立ミッションまで一気通貫で検証しました。",
+      en: "For the same client's robot-arm solution, I assessed Genesis from joint control through manipulation and learning. The work covered joint-space servoing, IK path tracking, gripper pick-and-place, contact and quality monitoring, parallel RL training, policy comparison, domain-randomization robustness and the client's assembly mission.",
+      ja: "同じ顧客向けソリューション開発のロボットアーム案件として、Genesisの関節制御からマニピュレーション・学習までの適用性を評価しました。関節サーボ、IK経路追従、ピックアンドプレース、接触・品質モニタリング、並列RL学習、方策比較、ドメインランダム化によるロバスト性、顧客の組立ミッションまで検証しました。",
     },
     clips: [
       {
@@ -332,12 +332,12 @@ window.SHOWCASE_CASES = [
     engine: "Genesis",
     tags: ["Manipulation", "RL", "Contact"],
     shortTitle: {
-      en: "Franka manipulation workflows",
-      ja: "Franka のマニピュレーション検証",
+      en: "Franka manipulation solution",
+      ja: "Franka マニピュレーションソリューション",
     },
     summary: {
-      en: "Joint control, IK, pick-and-place and learning-based assembly workflows.",
-      ja: "関節制御・逆運動学から、把持・組立・学習ワークフローまで。",
+      en: "Client robot-arm solution development: joint control, IK, pick-and-place and assembly capability assessment.",
+      ja: "顧客向けロボットアームソリューション開発。関節制御・IK・把持・組立への適用性を検証。",
     },
     number: "02",
     previewClip: 2,
@@ -346,12 +346,12 @@ window.SHOWCASE_CASES = [
     id: "c06",
     addedAt: "2026-08-03T17:18:52+09:00",
     title: {
-      en: "Genesis OpenArm Dual-Arm PPO Rollouts",
-      ja: "Genesis OpenArm 双腕PPOロールアウト",
+      en: "Genesis OpenArm Dual-Arm Control with PPO",
+      ja: "Genesis OpenArm 双腕PPO制御",
     },
     description: {
-      en: "Part of the same Genesis evaluation: PPO policies trained on the dual OpenArm configuration, rolled out across different object materials and random seeds to check policy consistency.",
-      ja: "同じGenesis評価の一環:双腕OpenArm構成で学習したPPO方策を、異なる素材・乱数シードでロールアウトし、方策の一貫性を確認。",
+      en: "As part of the client's Genesis assessment, I trained PPO policies for dual-arm OpenArm control and evaluated their behavior across object materials, tasks and random seeds to check policy consistency.",
+      ja: "顧客向けGenesis適性評価の一環として、双腕OpenArm制御のPPO方策を学習しました。対象物の素材・タスク・乱数シードを変えて動作を評価し、方策の一貫性を確認しました。",
     },
     clips: [
       {
@@ -398,12 +398,12 @@ window.SHOWCASE_CASES = [
     engine: "Genesis",
     tags: ["Dual-arm", "PPO"],
     shortTitle: {
-      en: "Dual-arm PPO policy rollouts",
-      ja: "双腕PPO方策のロールアウト",
+      en: "Dual-arm control with PPO",
+      ja: "PPOによる双腕ロボット制御",
     },
     summary: {
-      en: "OpenArm policy behavior across object materials, tasks and random seeds.",
-      ja: "素材・タスク・乱数シードを変え、OpenArmの方策挙動を確認。",
+      en: "Dual-arm control for a client solution, with PPO policies evaluated across materials, tasks and random seeds.",
+      ja: "顧客向け双腕制御の開発。素材・タスク・乱数シードを変えてPPO方策の一貫性を評価。",
     },
     number: "03",
     previewClip: 1,
@@ -442,8 +442,8 @@ window.SHOWCASE_CASES = [
       ja: "雪道走行とセンサーリスク",
     },
     summary: {
-      en: "DEM snow spray, forward visibility and sensor-risk evaluation.",
-      ja: "DEMで雪の巻き上げを再現し、前方視界とセンサーリスクを評価。",
+      en: "Developed DEM snow simulation for a client's vehicle visibility and sensor-risk assessment.",
+      ja: "顧客向けにDEM雪道走行シミュレーションを開発。前方視界とセンサーリスクを評価。",
     },
     number: "04",
     previewClip: 0,
@@ -452,8 +452,8 @@ window.SHOWCASE_CASES = [
     id: "c03",
     addedAt: "2026-08-03T17:18:52+09:00",
     title: {
-      en: "Agricultural Drone Spraying — SPH Coverage Prototype",
-      ja: "農業ドローン散布 — SPHによる被覆率プロトタイプ",
+      en: "Agricultural Drone Spraying — SPH Coverage and Drift",
+      ja: "農業ドローン散布 — SPHによる被覆率・ドリフト評価",
     },
     description: {
       en: "Client engagement: prototype a simulator for drone pesticide spraying with quantitative coverage testing. The spray plume is modeled with SPH (smoothed-particle hydrodynamics); the video evaluates field coverage ratio and drift.",
@@ -478,12 +478,12 @@ window.SHOWCASE_CASES = [
     engine: "SPH",
     tags: ["Spray", "Coverage"],
     shortTitle: {
-      en: "Agricultural spray coverage",
-      ja: "農業ドローンの散布被覆率",
+      en: "Agricultural spraying simulator",
+      ja: "農業ドローン散布シミュレータ",
     },
     summary: {
-      en: "An SPH prototype for field coverage and pesticide-spray drift.",
-      ja: "SPHによる噴霧モデルで、圃場の被覆率とドリフトを評価。",
+      en: "Developed an SPH spraying simulator prototype for a client's coverage and drift evaluation.",
+      ja: "顧客向け散布シミュレータのプロトタイプを開発。SPHで被覆率とドリフトを評価。",
     },
     number: "05",
     previewClip: 0,
@@ -496,8 +496,8 @@ window.SHOWCASE_CASES = [
       ja: "OpenArm ピッキング(NVIDIA Isaac)— RLからSim-to-Realへ",
     },
     description: {
-      en: "Company R&D assignment: evaluate the OpenArm open-source robot arm project. Using open assets in the NVIDIA Isaac environment, I trained grasping policies with reinforcement learning and reached stable, repeatable picks; the resulting policy can be deployed directly onto the physical unit for sim-to-real transfer.",
-      ja: "社内R&Dタスク:オープンソースの OpenArm プロジェクトの評価。NVIDIA Isaac 環境でオープンアセットを用いてRLで把持方策を学習し、安定したピッキングを実現。得られた方策は実機へ直接展開して Sim-to-Real が可能です。",
+      en: "For a client's robot-picking solution, I evaluated OpenArm and developed grasping policies with reinforcement learning using open assets in NVIDIA Isaac. The policies achieved stable, repeatable picking and can be deployed to the physical unit for sim-to-real transfer.",
+      ja: "顧客向けピッキングソリューションの開発として、OpenArmを評価し、NVIDIA Isaac上でオープンアセットを用いたRL把持方策を開発しました。安定したピッキングを実現し、得られた方策はSim-to-Realによる実機展開が可能です。",
     },
     clips: [
       {
@@ -536,12 +536,12 @@ window.SHOWCASE_CASES = [
     engine: "NVIDIA Isaac",
     tags: ["OpenArm", "RL", "Sim-to-Real"],
     shortTitle: {
-      en: "OpenArm picking & policy learning",
-      ja: "OpenArm の把持・方策学習",
+      en: "OpenArm picking solution",
+      ja: "OpenArm ピッキングソリューション",
     },
     summary: {
-      en: "Reinforcement-learning grasping workflows and the path toward sim-to-real.",
-      ja: "強化学習による把持と、Sim-to-Realに向けた検証ワークフロー。",
+      en: "Developed an OpenArm picking solution with RL-trained grasping policies for a client's sim-to-real application.",
+      ja: "顧客向けにRL把持方策を用いたOpenArmピッキングソリューションを開発。Sim-to-Realに対応。",
     },
     number: "06",
     previewClip: 0,
@@ -580,8 +580,8 @@ window.SHOWCASE_CASES = [
       ja: "4アーム協調による資源回収",
     },
     summary: {
-      en: "A concept demo of dynamic assignment and coordinated conveyor picking.",
-      ja: "動的な作業割当と、搬送ライン上での協調把持のコンセプトデモ。",
+      en: "Engineering solution for a client's recycling process, with a concept demo of four-arm scheduling.",
+      ja: "顧客の資源回収工程に向けた4アーム協調ソリューション。作業割当をコンセプト映像で提示。",
     },
     number: "07",
     previewClip: 0,
