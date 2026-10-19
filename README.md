@@ -1,11 +1,11 @@
-# Physical AI Showcase / Physical AI ショーケース
+# Physical AI Case Studies / Physical AI 事例集
 
 [Live showcase / 展示ページ](https://weiwillweiwillworkyo.github.io/physical-ai-case-collection/)
 
-Engineering solutions developed by WEI / 崔 煒 for clients, applying robotics,
-reinforcement learning and particle simulation to their technical challenges.
+Robot control, reinforcement learning and DEM/SPH simulation, brought together
+in a collection of projects and videos by WEI / 崔 煒.
 
-顧客の技術課題に対して、崔 煒（WEI）が開発したエンジニアリングソリューションの実績を紹介します。
+ロボットの制御や強化学習、DEM・SPHによる粒子シミュレーションの事例を、映像とともにまとめています。
 
 The public GitHub Pages site is organized into three sections:
 

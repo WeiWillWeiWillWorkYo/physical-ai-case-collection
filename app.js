@@ -7,19 +7,19 @@
   const messages = {
     en: {
       skip: "Skip to content",
-      siteTitle: "Physical AI Showcase",
+      siteTitle: "Physical AI Case Studies",
       intro:
-        "Engineering solutions I developed for clients, using robotics, reinforcement learning and particle simulation to address their technical challenges.",
+        "Robot control, reinforcement learning and DEM/SPH simulation, brought together in a collection of projects and videos.",
       disclosure:
         "No client data was used. Any client company names or other client information shown are included with permission.",
-      eyebrow: "CLIENT ENGINEERING SOLUTIONS",
+      eyebrow: "ROBOTICS · REINFORCEMENT LEARNING · DEM · SPH",
       caseStat: "simulation cases",
       demoStat: "video demonstrations",
       cases: "Simulation Cases",
       solvers: "Solvers",
       papers: "Papers",
       casesDescription:
-        "Client requirements, the engineering solutions I developed and demonstrations of their capabilities.",
+        "Watch each simulation and explore the control, learning and particle methods behind it.",
       solversDescription: "Simulation engines and numerical methods.",
       papersDescription: "Research papers and technical publications.",
       all: "All",
@@ -44,24 +44,24 @@
       openVideo: "Open video",
       emptyTitle: "No items added yet",
       emptyDescription: "This section is currently empty.",
-      footer: "Physical AI · Engineering Solutions",
-      meta: "Engineering solutions developed by WEI for clients, applying robotics, reinforcement learning and DEM/SPH simulation to their technical challenges. Available in English and Japanese.",
+      footer: "Physical AI · Case Studies",
+      meta: "Physical AI case studies in robot control, reinforcement learning and DEM/SPH simulation, with videos and descriptions in English and Japanese.",
     },
     ja: {
       skip: "コンテンツへスキップ",
-      siteTitle: "Physical AI ショーケース",
+      siteTitle: "Physical AI 事例集",
       intro:
-        "顧客の技術課題に対して、私が開発したエンジニアリングソリューションの実績。ロボティクス・強化学習・粒子シミュレーションを活用した案件を紹介します。",
+        "ロボットの制御や強化学習、DEM・SPHによる粒子シミュレーションの事例を、映像とともにまとめています。",
       disclosure:
         "顧客データは使用していません。顧客企業名などの情報を掲載している場合は、すべて許可を得ています。",
-      eyebrow: "顧客向けエンジニアリングソリューション",
+      eyebrow: "ロボット制御 · 強化学習 · DEM · SPH",
       caseStat: "シミュレーション事例",
       demoStat: "デモ映像",
       cases: "シミュレーション事例",
       solvers: "ソルバー",
       papers: "論文",
       casesDescription:
-        "顧客の要求に対して開発したソリューションと、その機能・技術的な成果を紹介します。",
+        "各事例の映像と、制御・学習・粒子シミュレーションに使った技術を紹介します。",
       solversDescription: "シミュレーションエンジンと数値計算手法。",
       papersDescription: "研究論文と技術文献。",
       all: "すべて",
@@ -86,8 +86,8 @@
       openVideo: "映像を開く",
       emptyTitle: "まだ項目がありません",
       emptyDescription: "この欄は現在空です。",
-      footer: "Physical AI · エンジニアリングソリューション",
-      meta: "崔 煒（WEI）が顧客向けに開発したエンジニアリングソリューションの実績。ロボティクス、強化学習、DEM・SPHによるシミュレーションの開発事例を紹介。",
+      footer: "Physical AI · 事例集",
+      meta: "ロボット制御、強化学習、DEM・SPHによるシミュレーションをまとめたPhysical AI事例集。各事例の映像と技術を日本語・英語で紹介します。",
     },
   };
   const icons = {
