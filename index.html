@@ -1,152 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Physical AI Case Collection</title>
-<style>
-:root { --ink:#1b2330; --sub:#5d6675; --ja:#6a7382; --line:#e3e7ee;
-        --bg:#f7f8fa; --card:#ffffff; --accent:#2456c4; }
-* { box-sizing:border-box; margin:0; }
-body { font-family:-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,
-       'Hiragino Sans','Noto Sans JP','Yu Gothic UI',sans-serif;
-       color:var(--ink); background:var(--bg); line-height:1.55; }
-.wrap { max-width:1180px; margin:0 auto; padding:36px 28px 80px; }
-header h1 { font-size:1.9rem; letter-spacing:.2px; }
-header .ja-sub { font-size:1.02rem; color:var(--ja); margin-top:4px; }
-header p.tag { color:var(--sub); margin-top:10px; font-size:.95rem; }
-nav.toc { margin:22px 0 8px; padding:14px 18px; background:var(--card);
-          border:1px solid var(--line); border-radius:10px; }
-nav.toc a { color:var(--accent); text-decoration:none; margin-right:14px;
-            font-size:.92rem; }
-nav.toc a:hover { text-decoration:underline; }
-section.case { margin-top:46px; }
-.case-head { border-left:4px solid var(--accent); padding-left:14px; }
-.case-head .num { color:var(--accent); font-weight:700; font-size:.85rem;
-                  letter-spacing:.12em; }
-.case-head h2 { font-size:1.42rem; margin-top:2px; }
-.case-head .h-ja { font-size:1.0rem; color:var(--ja); margin-top:2px; }
-.story { margin:14px 0 6px; max-width:960px; }
-.story .en { font-size:.97rem; }
-.story .ja { font-size:.85rem; color:var(--ja); margin-top:6px; }
-.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(430px,1fr));
-        gap:18px; margin-top:16px; }
-.card { background:var(--card); border:1px solid var(--line);
-        border-radius:12px; padding:14px 14px 12px; }
-.t-en { font-weight:600; font-size:1.0rem; }
-.t-ja { font-size:.84rem; color:var(--ja); margin-top:1px; }
-.note { font-size:.8rem; color:var(--sub); margin-top:2px; }
-.vids { display:flex; flex-direction:column; gap:10px; margin-top:10px; }
-.vid { position:relative; }
-.vid video { width:100%; border-radius:8px; background:#0c0f14; display:block; }
-.badge { position:absolute; top:8px; left:8px; z-index:2; font-size:.72rem;
-         font-weight:700; color:#fff; background:rgba(20,28,40,.72);
-         padding:2px 8px; border-radius:99px; letter-spacing:.06em; }
-footer { margin-top:60px; color:var(--sub); font-size:.85rem;
-         border-top:1px solid var(--line); padding-top:16px; }
-footer .ja { font-size:.8rem; color:var(--ja); margin-top:4px; }
-</style>
-</head>
-<body>
-<div class="wrap">
-<header>
-  <h1 lang="en">Physical AI Simulation — Case Collection</h1>
-  <div class="ja-sub" lang="ja">Physical AI シミュレーション事例集</div>
-  <p class="tag" lang="en">Client and R&amp;D engagements across DEM / SPH physics,
-  reinforcement learning, sim-to-real, and multi-robot orchestration.
-  Open this page from a local clone — videos play offline.</p>
-</header>
-<nav class="toc"><a href="#c04">01 · Genesis Drone Simulation Capability Assessment</a> <a href="#c05">02 · Genesis Manipulator Capability Assessment (Franka)</a> <a href="#c06">03 · Genesis OpenArm Dual-Arm PPO Rollouts</a> <a href="#c02">04 · High-Speed Driving on Snow — DEM Snow Simulation</a> <a href="#c03">05 · Agricultural Drone Spraying — SPH Coverage Prototype</a> <a href="#c01">06 · OpenArm Pick-and-Place in NVIDIA Isaac — RL to Sim-to-Real</a> <a href="#c07">07 · Four-Arm Collaborative Recycling Sorting on a Wood-Chip Stream</a></nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f6f8" />
+    <meta
+      name="description"
+      content="Physical AI simulation cases by WEI: robotics, reinforcement learning, DEM and SPH. Available in English and Japanese."
+    />
+    <title>Physical AI Showcase · WEI</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="cases.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content" data-i18n="skip"
+      >Skip to content</a
+    >
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#cases">
+          <span class="brand-mark" aria-hidden="true">W<span></span></span>
+          <span class="brand-name"
+            >WEI <span class="brand-divider">/</span> Physical AI</span
+          >
+        </a>
+        <div class="language-switch" role="group" aria-label="Language / 言語">
+          <button
+            type="button"
+            data-language="en"
+            lang="en"
+            aria-pressed="true"
+          >
+            EN
+          </button>
+          <button
+            type="button"
+            data-language="ja"
+            lang="ja"
+            aria-pressed="false"
+          >
+            日本語
+          </button>
+        </div>
+      </div>
+    </header>
 
-<section class="case" id="c04">
-  <div class="case-head">
-    <div class="num">CASE 01</div>
-    <h2 lang="en">Genesis Drone Simulation Capability Assessment</h2>
-    <div class="h-ja" lang="ja">Genesis ドローンシミュレーション適性評価</div>
-  </div>
-  <div class="story">
-    <p class="en" lang="en">Client engagement: assess whether the open-source Genesis engine can carry drone-simulation workloads. I ran a structured evaluation from basic function tests through RL and sim-to-real oriented robustness: direct API motor control, interactive flight, autonomous waypoint flight, an RL training environment with parallel policy learning, before/after policy comparison, disturbance stress tests, and a customer inspection mission.</p>
-    <p class="ja" lang="ja">顧客案件:オープンソースのGenesisがドローン仿真シナリオを担えるかの適性評価。API直下のモータ制御から、対話操縦、自動飛行、並列RL学習、学習前後比較、外乱ロバスト性、顧客の巡検ミッションまで段階的に検証しました(基本機能テスト+Sim-to-Real+RL)。</p>
-  </div>
-  <div class="grid"><div class="card"><div class="t-en" lang="en">API motor-RPM control</div><div class="t-ja" lang="ja">APIからモータRPMを直接制御</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="04_genesis_drone/en/01_api_motor_rpm_control.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="04_genesis_drone/ja/01_API%E3%81%8B%E3%82%89%E3%83%A2%E3%83%BC%E3%82%BFRPM%E3%82%92%E7%9B%B4%E6%8E%A5%E5%88%B6%E5%BE%A1.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Keyboard interactive control</div><div class="t-ja" lang="ja">キーボード入力によるインタラクティブ操縦</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="04_genesis_drone/en/02_keyboard_interactive_control.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="04_genesis_drone/ja/02_%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E5%85%A5%E5%8A%9B%E3%81%AB%E3%82%88%E3%82%8B%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3%E3%83%96%E6%93%8D%E7%B8%A6.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Destination auto-flight</div><div class="t-ja" lang="ja">目的地指定による自動飛行</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="04_genesis_drone/en/03_destination_auto_flight.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="04_genesis_drone/ja/03_%E7%9B%AE%E7%9A%84%E5%9C%B0%E6%8C%87%E5%AE%9A%E3%81%AB%E3%82%88%E3%82%8B%E8%87%AA%E5%8B%95%E9%A3%9B%E8%A1%8C.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">RL flight environment</div><div class="t-ja" lang="ja">強化学習向け飛行環境</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="04_genesis_drone/en/04_learning_environment.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="04_genesis_drone/ja/04_%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92%E5%90%91%E3%81%91%E9%A3%9B%E8%A1%8C%E7%92%B0%E5%A2%83.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Parallel RL training</div><div class="t-ja" lang="ja">並列環境で方策を学習</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="04_genesis_drone/en/05_parallel_rl_training.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="04_genesis_drone/ja/05_%E4%B8%A6%E5%88%97%E7%92%B0%E5%A2%83%E3%81%A7%E6%96%B9%E7%AD%96%E3%82%92%E5%AD%A6%E7%BF%92.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Policy before / after</div><div class="t-ja" lang="ja">学習前後の方策比較</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="04_genesis_drone/en/06_policy_before_after.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="04_genesis_drone/ja/06_%E5%AD%A6%E7%BF%92%E5%89%8D%E5%BE%8C%E3%81%AE%E6%96%B9%E7%AD%96%E6%AF%94%E8%BC%83.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Robustness stress test</div><div class="t-ja" lang="ja">外乱下のロバスト性検証</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="04_genesis_drone/en/07_robustness_stress_test.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="04_genesis_drone/ja/07_%E5%A4%96%E4%B9%B1%E4%B8%8B%E3%81%AE%E3%83%AD%E3%83%90%E3%82%B9%E3%83%88%E6%80%A7%E6%A4%9C%E8%A8%BC.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Customer inspection mission</div><div class="t-ja" lang="ja">顧客業務の巡検ミッション評価</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="04_genesis_drone/en/08_customer_mission_inspection.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="04_genesis_drone/ja/08_%E9%A1%A7%E5%AE%A2%E6%A5%AD%E5%8B%99%E3%81%AE%E5%B7%A1%E6%A4%9C%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E8%A9%95%E4%BE%A1.mp4"></video></figure></div></div></div>
-</section>
-<section class="case" id="c05">
-  <div class="case-head">
-    <div class="num">CASE 02</div>
-    <h2 lang="en">Genesis Manipulator Capability Assessment (Franka)</h2>
-    <div class="h-ja" lang="ja">Genesis マニピュレータ適性評価(Franka)</div>
-  </div>
-  <div class="story">
-    <p class="en" lang="en">Same Genesis-assessment engagement, manipulator side: verifying that Genesis carries robot-arm workloads end to end — joint-space servoing, IK path tracking, gripper pick-and-place, contact/quality monitoring, parallel RL policy training, before/after comparison, domain-randomization robustness, and a customer assembly mission.</p>
-    <p class="ja" lang="ja">同じGenesis適性評価案件のマニピュレータ編:関節サーボ、IK経路追従、ピックアンドプレース、接触・品質モニタリング、並列RL学習、学習前後比較、ドメインランダム化によるロバスト性、顧客の組立ミッションまで一気通貫で検証しました。</p>
-  </div>
-  <div class="grid"><div class="card"><div class="t-en" lang="en">Joint-space servo control</div><div class="t-ja" lang="ja">関節空間サーボ制御</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="05_genesis_franka_arm/en/01_joint_space_servo_control.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="05_genesis_franka_arm/ja/01_%E9%96%A2%E7%AF%80%E7%A9%BA%E9%96%93%E3%82%B5%E3%83%BC%E3%83%9C%E5%88%B6%E5%BE%A1.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Inverse-kinematics TCP path</div><div class="t-ja" lang="ja">逆運動学によるTCP経路追従</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="05_genesis_franka_arm/en/02_inverse_kinematics_tcp_path.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="05_genesis_franka_arm/ja/02_%E9%80%86%E9%81%8B%E5%8B%95%E5%AD%A6%E3%81%AB%E3%82%88%E3%82%8BTCP%E7%B5%8C%E8%B7%AF%E8%BF%BD%E5%BE%93.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Gripper pick-and-place workflow</div><div class="t-ja" lang="ja">グリッパによるピックアンドプレース</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="05_genesis_franka_arm/en/03_gripper_pick_place_workflow.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="05_genesis_franka_arm/ja/03_%E3%82%B0%E3%83%AA%E3%83%83%E3%83%91%E3%81%AB%E3%82%88%E3%82%8B%E3%83%94%E3%83%83%E3%82%AF%E3%82%A2%E3%83%B3%E3%83%89%E3%83%97%E3%83%AC%E3%83%BC%E3%82%B9.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Sensor contact &amp; quality monitoring</div><div class="t-ja" lang="ja">接触・品質モニタリング</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="05_genesis_franka_arm/en/04_sensor_contact_quality_monitoring.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="05_genesis_franka_arm/ja/04_%E6%8E%A5%E8%A7%A6%E3%83%BB%E5%93%81%E8%B3%AA%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%B3%E3%82%B0.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Parallel RL policy training</div><div class="t-ja" lang="ja">並列RL方策トレーニング</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="05_genesis_franka_arm/en/05_parallel_rl_policy_training.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="05_genesis_franka_arm/ja/05_%E4%B8%A6%E5%88%97RL%E6%96%B9%E7%AD%96%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Policy before / after comparison</div><div class="t-ja" lang="ja">学習前後の方策比較</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="05_genesis_franka_arm/en/06_policy_before_after_comparison.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="05_genesis_franka_arm/ja/06_%E5%AD%A6%E7%BF%92%E5%89%8D%E5%BE%8C%E3%81%AE%E6%96%B9%E7%AD%96%E6%AF%94%E8%BC%83.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Domain-randomization robustness</div><div class="t-ja" lang="ja">ドメインランダム化によるロバスト性検証</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="05_genesis_franka_arm/en/07_robustness_domain_randomization.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="05_genesis_franka_arm/ja/07_%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%A9%E3%83%B3%E3%83%80%E3%83%A0%E5%8C%96%E3%81%AB%E3%82%88%E3%82%8B%E3%83%AD%E3%83%90%E3%82%B9%E3%83%88%E6%80%A7%E6%A4%9C%E8%A8%BC.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Customer assembly mission</div><div class="t-ja" lang="ja">顧客向け組立ミッション</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="05_genesis_franka_arm/en/08_customer_assembly_mission.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="05_genesis_franka_arm/ja/08_%E9%A1%A7%E5%AE%A2%E5%90%91%E3%81%91%E7%B5%84%E7%AB%8B%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3.mp4"></video></figure></div></div></div>
-</section>
-<section class="case" id="c06">
-  <div class="case-head">
-    <div class="num">CASE 03</div>
-    <h2 lang="en">Genesis OpenArm Dual-Arm PPO Rollouts</h2>
-    <div class="h-ja" lang="ja">Genesis OpenArm 双腕PPOロールアウト</div>
-  </div>
-  <div class="story">
-    <p class="en" lang="en">Part of the same Genesis evaluation: PPO policies trained on the dual OpenArm configuration, rolled out across different object materials and random seeds to check policy consistency.</p>
-    <p class="ja" lang="ja">同じGenesis評価の一環:双腕OpenArm構成で学習したPPO方策を、異なる素材・乱数シードでロールアウトし、方策の一貫性を確認。</p>
-  </div>
-  <div class="grid"><div class="card"><div class="t-en" lang="en">Dual outward — rubber / POM (seed 5)</div><div class="t-ja" lang="ja">双腕アウトワード — ゴム/POM(seed 5)</div><div class="vids"><figure class="vid"><span class="badge">—</span><video controls preload="metadata" src="06_genesis_openarm_ppo/v5_01_openarm_dual_outward_rubber_pom_seed5.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Dual lift — resin / rubber (seed 1)</div><div class="t-ja" lang="ja">双腕リフト — 樹脂/ゴム(seed 1)</div><div class="vids"><figure class="vid"><span class="badge">—</span><video controls preload="metadata" src="06_genesis_openarm_ppo/v5_02_openarm_dual_lift_resin_rubber_seed1.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Dual split — metal / resin (seed 9)</div><div class="t-ja" lang="ja">双腕スプリット — 金属/樹脂(seed 9)</div><div class="vids"><figure class="vid"><span class="badge">—</span><video controls preload="metadata" src="06_genesis_openarm_ppo/v5_03_openarm_dual_split_metal_resin_seed9.mp4"></video></figure></div></div></div>
-</section>
-<section class="case" id="c02">
-  <div class="case-head">
-    <div class="num">CASE 04</div>
-    <h2 lang="en">High-Speed Driving on Snow — DEM Snow Simulation</h2>
-    <div class="h-ja" lang="ja">雪道高速走行 — DEMによる雪のシミュレーション</div>
-  </div>
-  <div class="story">
-    <p class="en" lang="en">Client engagement: develop an API that reproduces Rocky-DEM-class capability to simulate vehicles driving at high speed on snow. The snow in this video is fully DEM-based (discrete element method). The scenario evaluates forward visibility degradation and sensor-risk under snow spray thrown up by the vehicle.</p>
-    <p class="ja" lang="ja">顧客案件:Rocky DEM 相当の機能を再現するAPIを開発し、雪道での高速走行を仿真。映像中の雪はすべてDEM(離散要素法)で実装。巻き上げられた雪による前方視界の劣化とセンサーリスクを評価します。</p>
-  </div>
-  <div class="grid"><div class="card"><div class="t-en" lang="en">Forward-visibility &amp; sensor-risk evaluation</div><div class="t-ja" lang="ja">前方視界・センサーリスク評価</div><div class="vids"><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="02_snow_vehicle/ja/%E9%9B%AA%E9%81%93%E8%B5%B0%E8%A1%8C_%E5%89%8D%E6%96%B9%E8%A6%96%E7%95%8C%E3%82%BB%E3%83%B3%E3%82%B5%E3%83%BC%E3%83%AA%E3%82%B9%E3%82%AF%E8%A9%95%E4%BE%A1.mp4"></video></figure></div></div></div>
-</section>
-<section class="case" id="c03">
-  <div class="case-head">
-    <div class="num">CASE 05</div>
-    <h2 lang="en">Agricultural Drone Spraying — SPH Coverage Prototype</h2>
-    <div class="h-ja" lang="ja">農業ドローン散布 — SPHによる被覆率プロトタイプ</div>
-  </div>
-  <div class="story">
-    <p class="en" lang="en">Client engagement: prototype a simulator for drone pesticide spraying with quantitative coverage testing. The spray plume is modeled with SPH (smoothed-particle hydrodynamics); the video evaluates field coverage ratio and drift.</p>
-    <p class="ja" lang="ja">顧客案件:ドローン農薬散布と被覆率テストのプロトタイプ開発。噴霧はSPH(平滑粒子流体力学)で実装し、圃場の被覆率とドリフトを評価しています。</p>
-  </div>
-  <div class="grid"><div class="card"><div class="t-en" lang="en">Coverage-ratio &amp; drift evaluation</div><div class="t-ja" lang="ja">被覆率・ドリフト評価</div><div class="vids"><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="03_agriculture_spray/ja/%E8%BE%B2%E5%9C%B0%E6%95%A3%E5%B8%83_%E8%A2%AB%E8%A6%86%E7%8E%87%E3%83%89%E3%83%AA%E3%83%95%E3%83%88%E8%A9%95%E4%BE%A1.mp4"></video></figure></div></div></div>
-</section>
-<section class="case" id="c01">
-  <div class="case-head">
-    <div class="num">CASE 06</div>
-    <h2 lang="en">OpenArm Pick-and-Place in NVIDIA Isaac — RL to Sim-to-Real</h2>
-    <div class="h-ja" lang="ja">OpenArm ピッキング(NVIDIA Isaac)— RLからSim-to-Realへ</div>
-  </div>
-  <div class="story">
-    <p class="en" lang="en">Company R&amp;D assignment: evaluate the OpenArm open-source robot arm project. Using open assets in the NVIDIA Isaac environment, I trained grasping policies with reinforcement learning and reached stable, repeatable picks; the resulting policy can be deployed directly onto the physical unit for sim-to-real transfer.</p>
-    <p class="ja" lang="ja">社内R&amp;Dタスク:オープンソースの OpenArm プロジェクトの評価。NVIDIA Isaac 環境でオープンアセットを用いてRLで把持方策を学習し、安定したピッキングを実現。得られた方策は実機へ直接展開して Sim-to-Real が可能です。</p>
-  </div>
-  <div class="grid"><div class="card"><div class="t-en" lang="en">Physical AI solution overview (v3)</div><div class="t-ja" lang="ja">Physical AI ソリューション概要(v3)</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="01_isaac_picking/openarm_physical_ai_solution_en_1080p50_v3.mp4"></video></figure><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="01_isaac_picking/openarm_physical_ai_solution_ja_1080p50_v3.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Picking demo</div><div class="t-ja" lang="ja">ピッキングデモ</div><div class="vids"><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="01_isaac_picking/openarm_physical_ai_picking_ja_1080p.mp4"></video></figure></div></div><div class="card"><div class="t-en" lang="en">Solution overview (earlier cut, v2)</div><div class="t-ja" lang="ja">ソリューション概要(旧版 v2)</div><div class="vids"><figure class="vid"><span class="badge">日本語</span><video controls preload="metadata" src="01_isaac_picking/openarm_physical_ai_solution_ja_1080p50_v2.mp4"></video></figure></div></div></div>
-</section>
-<section class="case" id="c07">
-  <div class="case-head">
-    <div class="num">CASE 07</div>
-    <h2 lang="en">Four-Arm Collaborative Recycling Sorting on a Wood-Chip Stream</h2>
-    <div class="h-ja" lang="ja">木屑流からの資源回収 — 4アーム協調ソーティング</div>
-  </div>
-  <div class="story">
-    <p class="en" lang="en">Client engagement: build a solution that detects and picks recyclable objects (glass, metal, solid wood) out of a moving wood-chip stream. The proposed architecture combines VLA-based perception with multi-arm collaboration coordinated by a master scheduling policy: a shared global target pool, intercept prediction, cost-based dynamic assignment and reassignment, and collision-aware parallel execution across four identical arms. The 24-second storyboarded demo (Isaac Lab) visualizes the scheduler making assignment decisions live, including workload balancing, a mid-task reservation transfer to a downstream arm, and simultaneous picks.</p>
-    <p class="ja" lang="ja">顧客案件:流動する木屑ストリームからガラス・金属・木材などのリサイクル対象を認識・把持するソリューション。VLAベースの認識と、マスター方策による多腕協調(共有ターゲットプール/迎撃予測/コストベースの動的割当・再割当/衝突回避並列実行)を組み合わせた構成です。24秒のデモ(Isaac Lab)では負荷分散、下流アームへの予約移譲、同時ピックなどスケジューラの意思決定を可視化しています。</p>
-  </div>
-  <div class="grid"><div class="card"><div class="t-en" lang="en">Storyboarded 24 s concept demo (EN)</div><div class="t-ja" lang="ja">絵コンテに基づく24秒コンセプトデモ(英語版)</div><div class="vids"><figure class="vid"><span class="badge">EN</span><video controls preload="metadata" src="07_isaaclab_4arm_sorting/isaaclab_4arm_collaborative_sorting_720p24.mp4"></video></figure></div></div></div>
-</section>
-<footer>
-  <div lang="en">Private material. Do not redistribute without review of
-  customer-facing claims.</div>
-  <div class="ja" lang="ja">非公開資料です。顧客関連の記載の確認なしに再配布しないでください。</div>
-</footer>
-</div>
-</body>
+    <div class="shell">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span> ENGINEERING & RESEARCH
+          </p>
+          <h1 id="page-title" data-i18n="siteTitle">Physical AI Showcase</h1>
+          <p class="intro-description" data-i18n="intro">
+            A collection of simulation studies and engineering workflows for
+            Physical AI.
+          </p>
+        </div>
+        <div class="intro-stats" aria-label="Collection / コレクション">
+          <div>
+            <strong id="case-count">7</strong
+            ><span data-i18n="caseStat">simulation cases</span>
+          </div>
+          <div>
+            <strong id="demo-count">25</strong
+            ><span data-i18n="demoStat">video demonstrations</span>
+          </div>
+        </div>
+      </section>
+
+      <nav
+        class="section-nav"
+        aria-label="Collection sections / コンテンツ分類"
+      >
+        <a href="#cases" data-section="cases" aria-current="page">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            aria-hidden="true"
+          >
+            <rect x="3" y="4" width="18" height="16" rx="3" />
+            <path d="m10 9 5 3-5 3Z" />
+          </svg>
+          <span data-i18n="cases">Simulation Cases</span
+          ><span class="nav-count" id="nav-case-count">07</span>
+        </a>
+        <a href="#solvers" data-section="solvers">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            aria-hidden="true"
+          >
+            <path d="m12 3 9 5-9 5-9-5 9-5Z" />
+            <path d="m3 12 9 5 9-5M3 16l9 5 9-5" />
+          </svg>
+          <span data-i18n="solvers">Solvers</span>
+        </a>
+        <a href="#papers" data-section="papers">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            aria-hidden="true"
+          >
+            <path
+              d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"
+            />
+            <path d="M14 3v6h6M8 13h8M8 17h5" />
+          </svg>
+          <span data-i18n="papers">Papers</span>
+        </a>
+      </nav>
+
+      <main id="main-content" tabindex="-1"></main>
+      <noscript
+        ><p class="noscript">
+          Please enable JavaScript to browse the cases and switch languages.<br />事例の閲覧と言語切替には、JavaScriptを有効にしてください。
+        </p></noscript
+      >
+
+      <footer class="site-footer">
+        <span>WEI <span class="footer-divider">/</span> 崔 煒</span>
+        <span data-i18n="footer">Physical AI · Simulation & Engineering</span>
+      </footer>
+    </div>
+  </body>
 </html>

@@ -1,43 +1,61 @@
-# Physical AI Case Collection / Physical AI 事例集
+# Physical AI Showcase / Physical AI ショーケース
 
-**▶ Live showcase page / 展示ページ: https://weiwillweiwillworkyo.github.io/physical-ai-case-collection/**
+[Live showcase / 展示ページ](https://weiwillweiwillworkyo.github.io/physical-ai-case-collection/)
 
-Private collection of customer-facing Physical AI simulation videos.
+Physical AI simulation studies and engineering demonstrations by WEI / 崔 煒.
+The public GitHub Pages site is organized into three sections:
 
-日本の顧客向け説明を含む Physical AI シミュレーション事例集です。
+- **Simulation Cases / シミュレーション事例** — seven case studies, with field filters, descriptions and video players.
+- **Solvers / ソルバー** — currently empty; content will be selected later.
+- **Papers / 論文** — currently empty; content will be selected later.
 
-## Contents
+The EN / 日本語 control switches the interface, case descriptions and clip titles,
+and selects the corresponding video version where available. Single-language
+clips show their actual language. The preference is saved in the browser;
+`?lang=en` or `?lang=ja` can be used for a language-specific link.
+
+EN / 日本語ボタンで表示言語を切り替えます。対応する言語の映像がある場合は自動で選択し、
+単一言語の映像には実際の言語を表示します。ソルバー・論文の欄は現在空です。
+
+## Cases and media
 
 | Directory | Contents |
 |---|---|
-| `01_isaac_picking` | Isaac Lab picking demo versions v1-v3, Japanese and English where available |
-| `02_snow_vehicle/ja` | Snow-road vehicle visibility and sensor-risk evaluation |
-| `03_agriculture_spray/ja` | Agricultural drone spray coverage and drift evaluation |
-| `04_genesis_drone` | Genesis drone control, RL workflow, robustness, and mission videos in Japanese and English |
-| `05_genesis_franka_arm` | Genesis Franka arm control and workflow videos in Japanese and English |
-| `06_genesis_openarm_ppo` | Genesis OpenArm PPO policy rollouts |
-| `07_isaaclab_4arm_sorting` | Isaac Lab four-arm collaborative recycling sorting: global scheduler, dynamic target assignment/reassignment, moving-belt picking with wood-chip stream |
+| `04_genesis_drone` | Drone control, parallel RL, robustness and inspection workflows |
+| `05_genesis_franka_arm` | Franka control, manipulation, contact and learning workflows |
+| `06_genesis_openarm_ppo` | Dual-arm OpenArm PPO policy rollouts |
+| `02_snow_vehicle/ja` | DEM snow spray, visibility and sensor-risk evaluation |
+| `03_agriculture_spray/ja` | SPH agricultural spraying, coverage and drift prototype |
+| `01_isaac_picking` | OpenArm grasping and policy-learning demonstrations in NVIDIA Isaac |
+| `07_isaaclab_4arm_sorting` | Storyboarded concept demo of four-arm recycling sorting |
 
-The collection contains 42 MP4 files. `SHA256SUMS` records their integrity hashes.
+There are 25 demonstrations with 42 MP4 files including language variants and
+previous cuts. All original videos are retained. `SHA256SUMS` records their hashes.
+The case descriptions distinguish evaluation work, prototypes and concept demos.
+Source projects, checkpoints and raw captures are not included.
 
-## Showcase page
+## Local viewing
 
-`index.html` is a self-contained bilingual (EN primary / JA secondary) showcase
-page with an embedded player, title, and engagement summary for every video.
-GitHub cannot stream repository files and GitHub Pages would make the content
-public, so view it from a local clone:
+No build step, package installation or external service is required. A full clone
+includes the videos and works offline:
 
 ```bash
-git clone git@github.com:WeiWillWeiWillWorkYo/physical-ai-case-collection.git
+git clone https://github.com/WeiWillWeiWillWorkYo/physical-ai-case-collection.git
 cd physical-ai-case-collection
-python3 -m http.server 8080   # or simply open index.html in a browser
-# → http://localhost:8080
+python3 -m http.server 8080
+# Open http://localhost:8080
 ```
 
-Works fully offline — suitable for interviews and customer meetings.
+You can also open `index.html` directly. Browser storage availability may vary for
+local files; language switching still works without storage.
 
-## Notes
+## Site files
 
-- Videos are stored directly in Git because every individual file is below GitHub's 100 MB file limit.
-- Source projects, checkpoints, raw captures, previews, and intermediate renders are not included.
-- This repository is private and the videos should not be redistributed without an explicit review of customer-facing claims.
+- `index.html` — shared page structure and navigation.
+- `styles.css` — responsive layout and visual styles.
+- `app.js` — Japanese/English interface, case filtering, navigation and players.
+- `cases.js` — bilingual case metadata and original video paths.
+- `assets/posters/` — preview images extracted from the existing case videos.
+
+Case links use `#cases/c04` (for example). Legacy links such as `#c04` continue to
+work. GitHub Pages publishes the repository root from `main`.
