@@ -4,7 +4,7 @@ window.SHOWCASE_CASES = [
     id: "c04",
     addedAt: "2026-08-03T17:18:52+09:00",
     title: {
-      en: "From Motor Control To Autonomous Flight",
+      en: "From Motor Control to Autonomous Flight",
       ja: "モータ制御から自律飛行へ",
     },
     description: {
@@ -161,7 +161,7 @@ window.SHOWCASE_CASES = [
     engine: "Genesis",
     tags: ["Control", "RL", "Robustness"],
     shortTitle: {
-      en: "Drone Control And Autonomous Flight",
+      en: "Drone Control and Autonomous Flight",
       ja: "ドローンの制御と自律飛行",
     },
     summary: {
@@ -175,8 +175,8 @@ window.SHOWCASE_CASES = [
     id: "c05",
     addedAt: "2026-08-03T17:18:52+09:00",
     title: {
-      en: "Picking And Assembly With Franka",
-      ja: "Frankaでつかむ・運ぶ・組み立てる",
+      en: "Franka Simulation and Control in Genesis",
+      ja: "GenesisでFrankaをシミュレーション制御",
     },
     description: {
       en: "The arm has to reach the part, close the gripper and control contact as it places or assembles it. In Genesis, these Franka demos connect joint-space servo control and IK-based TCP tracking with grasping, contact monitoring and assembly. Parallel RL training and domain randomization explore how the learned policy behaves as task conditions change.",
@@ -332,12 +332,12 @@ window.SHOWCASE_CASES = [
     engine: "Genesis",
     tags: ["Manipulation", "RL", "Contact"],
     shortTitle: {
-      en: "Picking And Assembly With Franka",
-      ja: "Frankaでつかむ・運ぶ・組み立てる",
+      en: "Franka Simulation and Control in Genesis",
+      ja: "GenesisでFrankaをシミュレーション制御",
     },
     summary: {
-      en: "Picking, placing and assembly with Franka, using IK, contact monitoring and parallel RL in Genesis.",
-      ja: "IKによる経路追従、接触モニタリング、並列RLでFrankaの把持と組立を試す。",
+      en: "Controlling Franka in Genesis through joint servoing, IK-based TCP tracking, contact monitoring and parallel RL.",
+      ja: "GenesisでFrankaの関節制御、IKによるTCP経路追従、接触モニタリング、並列RLを試す。",
     },
     number: "02",
     previewClip: 2,
@@ -346,7 +346,7 @@ window.SHOWCASE_CASES = [
     id: "c06",
     addedAt: "2026-08-03T17:18:52+09:00",
     title: {
-      en: "Learning Dual-Arm Control With PPO",
+      en: "Learning Dual-Arm Control with PPO",
       ja: "PPOで学ぶ双腕制御",
     },
     description: {
@@ -398,7 +398,7 @@ window.SHOWCASE_CASES = [
     engine: "Genesis",
     tags: ["Dual-arm", "PPO"],
     shortTitle: {
-      en: "Learning Dual-Arm Control With PPO",
+      en: "Learning Dual-Arm Control with PPO",
       ja: "PPOで学ぶ双腕制御",
     },
     summary: {
@@ -412,7 +412,7 @@ window.SHOWCASE_CASES = [
     id: "c02",
     addedAt: "2026-08-03T17:18:52+09:00",
     title: {
-      en: "Driving Through Snow With DEM",
+      en: "Driving Through Snow with DEM",
       ja: "DEMで見る雪道走行と巻き上げ",
     },
     description: {
@@ -438,7 +438,7 @@ window.SHOWCASE_CASES = [
     engine: "DEM",
     tags: ["Snow", "Sensors"],
     shortTitle: {
-      en: "Snow Driving With DEM",
+      en: "Snow Driving with DEM",
       ja: "DEMで見る雪道走行",
     },
     summary: {
@@ -452,12 +452,12 @@ window.SHOWCASE_CASES = [
     id: "c03",
     addedAt: "2026-08-03T17:18:52+09:00",
     title: {
-      en: "Drone Spraying With SPH",
-      ja: "SPHで見るドローン散布",
+      en: "Drone Spraying Simulation with SPH",
+      ja: "SPHによるドローン散布シミュレーション",
     },
     description: {
-      en: "A spraying drone needs to cover a field evenly while limiting spray that drifts away from the target area. This prototype uses SPH (smoothed-particle hydrodynamics) to model the spray plume and measures field coverage and drift. The demo shows the spray distribution alongside those measurements to make uneven coverage visible.",
-      ja: "圃場全体にむらなく散布し、狙った場所の外へ流れる量を抑える。ドローンの噴霧をSPH（Smoothed Particle Hydrodynamics）で扱うプロトタイプを作り、圃場の被覆率とドリフトを計測しています。散布の分布と評価指標を同じ画面で見ながら、被覆の偏りを確かめます。",
+      en: "A spraying drone needs to cover a field evenly while limiting spray that drifts away from the target area. This simulation uses SPH (smoothed-particle hydrodynamics) to model the spray plume and measures field coverage and drift. The spray distribution is shown alongside those measurements to make uneven coverage visible.",
+      ja: "圃場全体にむらなく散布し、狙った場所の外へ流れる量を抑える。ドローンの噴霧をSPH（平滑粒子流体力学）によるシミュレーションで再現し、圃場の被覆率とドリフトを計測しています。散布の分布と評価指標を同じ画面で見ながら、被覆の偏りを確かめます。",
     },
     clips: [
       {
@@ -478,11 +478,11 @@ window.SHOWCASE_CASES = [
     engine: "SPH",
     tags: ["Spray", "Coverage"],
     shortTitle: {
-      en: "Drone Spraying With SPH",
-      ja: "SPHで見るドローン散布",
+      en: "Drone Spraying Simulation with SPH",
+      ja: "SPHによるドローン散布シミュレーション",
     },
     summary: {
-      en: "Following the spray with SPH to see field coverage, uneven deposition and drift.",
+      en: "SPH simulation of drone spraying, field coverage and drift.",
       ja: "SPHで噴霧の広がりを追い、圃場の被覆率と散布の偏り、ドリフトを見る。",
     },
     number: "05",
@@ -492,7 +492,7 @@ window.SHOWCASE_CASES = [
     id: "c01",
     addedAt: "2026-08-03T17:18:52+09:00",
     title: {
-      en: "OpenArm Picking With RL",
+      en: "OpenArm Picking with RL",
       ja: "RLで学ぶOpenArmのピッキング",
     },
     description: {
@@ -536,7 +536,7 @@ window.SHOWCASE_CASES = [
     engine: "NVIDIA Isaac",
     tags: ["OpenArm", "RL", "Sim-to-Real"],
     shortTitle: {
-      en: "OpenArm Picking With RL",
+      en: "OpenArm Picking with RL",
       ja: "RLで学ぶOpenArmのピッキング",
     },
     summary: {
@@ -550,7 +550,7 @@ window.SHOWCASE_CASES = [
     id: "c07",
     addedAt: "2026-08-13T02:07:17+09:00",
     title: {
-      en: "Four Arms Sorting A Moving Wood-Chip Stream",
+      en: "Four Arms Sorting a Moving Wood-Chip Stream",
       ja: "流れる木屑から4本のアームで資源を拾う",
     },
     description: {
@@ -576,7 +576,7 @@ window.SHOWCASE_CASES = [
     engine: "Isaac Lab",
     tags: ["Multi-arm", "Scheduling"],
     shortTitle: {
-      en: "Four Arms On The Sorting Line",
+      en: "Four Arms on the Sorting Line",
       ja: "選別ラインで働く4本のアーム",
     },
     summary: {
@@ -590,7 +590,7 @@ window.SHOWCASE_CASES = [
     id: "c08",
     addedAt: "2026-10-19T13:15:14+09:00",
     title: {
-      en: "Robot Arms On The Production Line",
+      en: "Robot Arms on the Production Line",
       ja: "生産ラインにロボットアームを",
     },
     description: {
@@ -616,7 +616,7 @@ window.SHOWCASE_CASES = [
     engine: "NVIDIA Isaac Sim",
     tags: ["Production line", "Robot integration", "Automation"],
     shortTitle: {
-      en: "Robot Arms On The Production Line",
+      en: "Robot Arms on the Production Line",
       ja: "生産ラインにロボットアームを",
     },
     summary: {

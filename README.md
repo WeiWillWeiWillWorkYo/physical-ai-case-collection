@@ -36,10 +36,10 @@ opening or reloading the page starts with newest first.
 | Directory | Contents |
 |---|---|
 | `04_genesis_drone` | Drone motor control, autonomous flight and parallel RL in Genesis |
-| `05_genesis_franka_arm` | Franka picking and assembly with IK, contact monitoring and parallel RL |
+| `05_genesis_franka_arm` | Franka simulation and control in Genesis |
 | `06_genesis_openarm_ppo` | OpenArm dual-arm control with PPO across materials and tasks |
 | `02_snow_vehicle/ja` | DEM snow spray, forward visibility and sensor risk during driving |
-| `03_agriculture_spray/ja` | SPH drone-spraying prototype for field coverage and drift |
+| `03_agriculture_spray/ja` | SPH drone-spraying simulation for field coverage and drift |
 | `01_isaac_picking` | OpenArm picking with RL in NVIDIA Isaac and a Sim-to-Real workflow |
 | `07_isaaclab_4arm_sorting` | Four-arm recycling concept with VLA-based perception and shared scheduling |
 | `08_kiptech_solution` | Case 08: Robot arms on the production line |
