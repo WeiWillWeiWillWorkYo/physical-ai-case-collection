@@ -25,6 +25,10 @@
       mobility: "Mobility",
       multiphysics: "Particle simulation",
       filterLabel: "Filter cases by field",
+      sortLabel: "Sort by",
+      newestFirst: "Date added: newest first",
+      oldestFirst: "Date added: oldest first",
+      dateAdded: "Added",
       viewCase: "View case",
       demos: (n) => `${n} ${n === 1 ? "demonstration" : "demonstrations"}`,
       results: (n, total) => `${n} of ${total} cases`,
@@ -61,6 +65,10 @@
       mobility: "モビリティ",
       multiphysics: "粒子シミュレーション",
       filterLabel: "分野で事例を絞り込む",
+      sortLabel: "並び順",
+      newestFirst: "追加日：新しい順",
+      oldestFirst: "追加日：古い順",
+      dateAdded: "追加日",
       viewCase: "事例を見る",
       demos: (n) => `${n} 本のデモ`,
       results: (n, total) => `全${total}件中 ${n}件を表示`,
@@ -111,6 +119,7 @@
       ["en", "ja"].includes(value),
     ) || (navigator.language.toLowerCase().startsWith("ja") ? "ja" : "en");
   let filter = "all";
+  let sortOrder = "newest";
   let renderedUrl = "";
   const text = (key) => messages[language][key];
 
@@ -145,15 +154,21 @@
         <div class="card-eyebrow"><span>${escape(item.engine)}</span><span class="separator">/</span><span>${escape(text(item.category))}</span></div>
         <h3>${escape(item.shortTitle[language])}</h3>
         <p class="card-summary">${escape(item.summary[language])}</p>
-        <div class="card-bottom"><span>${text("demos")(item.clips.length)}</span><span class="card-action">${text("viewCase")}${icons.arrow}</span></div>
+        <div class="card-bottom"><div class="card-facts"><span>${text("dateAdded")} <time datetime="${item.addedAt}">${item.addedAt.slice(0, 10)}</time></span><span>${text("demos")(item.clips.length)}</span></div><span class="card-action">${text("viewCase")}${icons.arrow}</span></div>
       </div>
     </a>`;
   }
 
   function renderCards() {
-    const visible = cases.filter(
-      (item) => filter === "all" || item.category === filter,
-    );
+    const visible = cases
+      .filter((item) => filter === "all" || item.category === filter)
+      .sort((a, b) => {
+        // Cases added together follow the existing curated timeline.
+        const chronological =
+          Date.parse(a.addedAt) - Date.parse(b.addedAt) ||
+          Number(a.number) - Number(b.number);
+        return sortOrder === "newest" ? -chronological : chronological;
+      });
     main.querySelector(".case-grid").innerHTML = visible.map(card).join("");
     main.querySelector(".results-status").textContent = text("results")(
       visible.length,
@@ -172,7 +187,15 @@
       <div class="filters" role="group" aria-label="${text("filterLabel")}">
         ${["all", "robotics", "mobility", "multiphysics"].map((key) => `<button type="button" class="filter" data-filter="${key}" aria-pressed="${key === filter}">${text(key)}</button>`).join("")}
       </div></div>
-      <p class="results-status" role="status" aria-live="polite"></p><div class="case-grid"></div>`;
+      <div class="list-toolbar">
+        <p class="results-status" role="status" aria-live="polite"></p>
+        <div class="sort-control"><label for="case-sort">${text("sortLabel")}</label>
+          <select id="case-sort" data-sort>
+            <option value="newest"${sortOrder === "newest" ? " selected" : ""}>${text("newestFirst")}</option>
+            <option value="oldest"${sortOrder === "oldest" ? " selected" : ""}>${text("oldestFirst")}</option>
+          </select>
+        </div>
+      </div><div class="case-grid"></div>`;
     renderCards();
   }
 
@@ -296,6 +319,11 @@
   });
 
   main.addEventListener("change", (event) => {
+    if (event.target.matches("[data-sort]")) {
+      sortOrder = event.target.value;
+      renderCards();
+      return;
+    }
     const select = event.target.closest("[data-video-language]");
     if (!select) return;
     const item = route().item;

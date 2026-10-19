@@ -5,7 +5,7 @@
 Physical AI simulation studies and engineering demonstrations by WEI / 崔 煒.
 The public GitHub Pages site is organized into three sections:
 
-- **Simulation Cases / シミュレーション事例** — seven case studies, with field filters, descriptions and video players.
+- **Simulation Cases / シミュレーション事例** — seven case studies, with field filters, date sorting, descriptions and video players.
 - **Solvers / ソルバー** — currently empty; content will be selected later.
 - **Papers / 論文** — currently empty; content will be selected later.
 
@@ -16,6 +16,16 @@ clips show their actual language. The preference is saved in the browser;
 
 EN / 日本語ボタンで表示言語を切り替えます。対応する言語の映像がある場合は自動で選択し、
 単一言語の映像には実際の言語を表示します。ソルバー・論文の欄は現在空です。
+
+Cases default to **newest first**; the sort control also offers **oldest first**.
+Dates are when each case's media was first added to this repository, rather than
+later page edits or video watermark updates. Cases added in the same commit
+follow the existing curated timeline, reversed for newest first. Switching
+language, filtering or returning from a case preserves the current sort choice;
+opening or reloading the page starts with newest first.
+
+事例は追加日の新しい順で表示します。「並び順」から古い順にも変更できます。
+同時に追加された事例は、既存の時間軸に沿って並びます。
 
 ## Cases and media
 
@@ -59,3 +69,7 @@ local files; language switching still works without storage.
 
 Case links use `#cases/c04` (for example). Legacy links such as `#c04` continue to
 work. GitHub Pages publishes the repository root from `main`.
+
+When adding a case, set `addedAt` to its original addition timestamp (ISO 8601
+with a timezone). Keep the case `number` stable: it also records the curated
+timeline used to break ties between cases added together.

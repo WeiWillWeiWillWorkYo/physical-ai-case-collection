@@ -2,6 +2,7 @@
 window.SHOWCASE_CASES = [
   {
     id: "c04",
+    addedAt: "2026-08-03T17:18:52+09:00",
     title: {
       en: "Genesis Drone Simulation Capability Assessment",
       ja: "Genesis ドローンシミュレーション適性評価",
@@ -172,6 +173,7 @@ window.SHOWCASE_CASES = [
   },
   {
     id: "c05",
+    addedAt: "2026-08-03T17:18:52+09:00",
     title: {
       en: "Genesis Manipulator Capability Assessment (Franka)",
       ja: "Genesis マニピュレータ適性評価(Franka)",
@@ -342,6 +344,7 @@ window.SHOWCASE_CASES = [
   },
   {
     id: "c06",
+    addedAt: "2026-08-03T17:18:52+09:00",
     title: {
       en: "Genesis OpenArm Dual-Arm PPO Rollouts",
       ja: "Genesis OpenArm 双腕PPOロールアウト",
@@ -407,6 +410,7 @@ window.SHOWCASE_CASES = [
   },
   {
     id: "c02",
+    addedAt: "2026-08-03T17:18:52+09:00",
     title: {
       en: "High-Speed Driving on Snow — DEM Snow Simulation",
       ja: "雪道高速走行 — DEMによる雪のシミュレーション",
@@ -446,6 +450,7 @@ window.SHOWCASE_CASES = [
   },
   {
     id: "c03",
+    addedAt: "2026-08-03T17:18:52+09:00",
     title: {
       en: "Agricultural Drone Spraying — SPH Coverage Prototype",
       ja: "農業ドローン散布 — SPHによる被覆率プロトタイプ",
@@ -485,6 +490,7 @@ window.SHOWCASE_CASES = [
   },
   {
     id: "c01",
+    addedAt: "2026-08-03T17:18:52+09:00",
     title: {
       en: "OpenArm Pick-and-Place in NVIDIA Isaac — RL to Sim-to-Real",
       ja: "OpenArm ピッキング(NVIDIA Isaac)— RLからSim-to-Realへ",
@@ -542,6 +548,7 @@ window.SHOWCASE_CASES = [
   },
   {
     id: "c07",
+    addedAt: "2026-08-13T02:07:17+09:00",
     title: {
       en: "Four-Arm Collaborative Recycling Sorting on a Wood-Chip Stream",
       ja: "木屑流からの資源回収 — 4アーム協調ソーティング",
