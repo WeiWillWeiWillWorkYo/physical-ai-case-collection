@@ -9,7 +9,7 @@ reinforcement learning and particle simulation to their technical challenges.
 
 The public GitHub Pages site is organized into three sections:
 
-- **Simulation Cases / シミュレーション事例** — seven client projects, with field filters, date sorting, descriptions and video players.
+- **Simulation Cases / シミュレーション事例** — nine client projects, with field filters, date sorting, descriptions and video players.
 - **Solvers / ソルバー** — currently empty; content will be selected later.
 - **Papers / 論文** — currently empty; content will be selected later.
 
@@ -42,8 +42,10 @@ opening or reloading the page starts with newest first.
 | `03_agriculture_spray/ja` | SPH spraying simulator prototype developed for client coverage and drift assessment |
 | `01_isaac_picking` | OpenArm picking solution developed for a client using RL in NVIDIA Isaac |
 | `07_isaaclab_4arm_sorting` | Client recycling-sorting solution; video presents the four-arm scheduling concept |
+| `08_kiptech_solution` | Case 08: KIPtech Solution, a combined industrial robotics showcase in NVIDIA Isaac Sim |
+| `09_giga_ocean_robotics` | Case 09: Giga ocean robotics, a subsea ROV pipeline-intervention concept demo |
 
-There are 24 demonstrations with 41 MP4 files including language variants.
+There are 26 demonstrations with 43 MP4 files including language variants.
 `SHA256SUMS` records their hashes.
 The case descriptions distinguish evaluation work, prototypes and concept demos.
 Source projects, checkpoints and raw captures are not included.

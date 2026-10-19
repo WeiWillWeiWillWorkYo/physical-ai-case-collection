@@ -586,4 +586,84 @@ window.SHOWCASE_CASES = [
     number: "07",
     previewClip: 0,
   },
+  {
+    id: "c08",
+    addedAt: "2026-10-19T13:15:14+09:00",
+    title: {
+      en: "KIPtech Solution — Industrial Robotics",
+      ja: "KIPtech Solution — 産業用ロボティクス",
+    },
+    description: {
+      en: "An industrial robotics solution showcase developed for KIPtech with NVIDIA Isaac Sim. The combined film demonstrates machine tending, warehouse transport, visual inspection and multi-robot collaboration, bringing several factory automation workflows together in one presentation.",
+      ja: "KIPtech向けにNVIDIA Isaac Simで開発した産業用ロボティクスのソリューション映像です。工作機械へのワーク供給・搬出、倉庫内搬送、外観検査、複数ロボットの協調動作など、工場自動化のワークフローを1本の映像にまとめています。",
+    },
+    clips: [
+      {
+        title: {
+          en: "KIPtech Solution — combined showcase",
+          ja: "KIPtech Solution — 総合デモ映像",
+        },
+        videos: [
+          {
+            lang: "en",
+            src: "08_kiptech_solution/Kiptech-solution.mp4",
+            poster: "assets/posters/c08-01-en.jpg",
+          },
+        ],
+      },
+    ],
+    category: "robotics",
+    engine: "NVIDIA Isaac Sim",
+    tags: ["Industrial robotics", "Automation", "Multi-robot"],
+    shortTitle: {
+      en: "KIPtech Solution",
+      ja: "KIPtech Solution",
+    },
+    summary: {
+      en: "Industrial robotics showcase: machine tending, warehouse transport, visual inspection and multi-robot collaboration.",
+      ja: "工作機械へのワーク供給・搬出、倉庫内搬送、外観検査、複数ロボットの協調動作を紹介。",
+    },
+    number: "08",
+    previewClip: 0,
+  },
+  {
+    id: "c09",
+    addedAt: "2026-10-19T13:15:14+09:00",
+    title: {
+      en: "Giga Ocean Robotics — Subsea Pipeline Intervention Concept",
+      ja: "Giga 海洋ロボティクス — 海底パイプライン作業コンセプト",
+    },
+    description: {
+      en: "A subsea intervention concept demo developed in NVIDIA Isaac Sim for the proposed KIPtech collaboration with Giga (Gigala / Ocean Intella). An ROV approaches a seabed pipeline, holds station against currents, localizes the worksite and positions its manipulator to trace a circumferential repair seam at a pipe joint. The demo includes contact-force feedback to the floating ROV body and post-task verification; welding is visualized at concept level.",
+      ja: "Giga（Gigala / Ocean Intella）とKIPtechの協業提案に向け、NVIDIA Isaac Simで開発した海底作業のコンセプトデモです。ROVが海底パイプラインへ接近し、海流下で定点保持しながら作業箇所を認識し、マニピュレータで管継手の円周方向の補修経路を追従します。接触力が浮遊するROV本体へ及ぼす影響と作業後の確認も示し、溶接はコンセプトとして可視化しています。",
+    },
+    clips: [
+      {
+        title: {
+          en: "Ocean robotics — ROV pipeline intervention concept demo",
+          ja: "海洋ロボティクス — ROVによるパイプライン作業コンセプトデモ",
+        },
+        videos: [
+          {
+            lang: "en",
+            src: "09_giga_ocean_robotics/ocean-robotics-concept-demo.mp4",
+            poster: "assets/posters/c09-01-en.jpg",
+          },
+        ],
+      },
+    ],
+    category: "robotics",
+    engine: "NVIDIA Isaac Sim",
+    tags: ["ROV", "Marine robotics", "Contact control"],
+    shortTitle: {
+      en: "Giga ocean robotics",
+      ja: "Giga 海洋ロボティクス",
+    },
+    summary: {
+      en: "Subsea ROV concept: station keeping, worksite localization and manipulator tracking along a pipeline repair seam.",
+      ja: "海底ROVのコンセプトデモ。定点保持、作業箇所の認識、パイプライン補修経路への追従を実演。",
+    },
+    number: "09",
+    previewClip: 0,
+  },
 ];
